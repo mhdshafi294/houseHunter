@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.divider{
+    width: 32px;
+    height: 1px;
+    background: #F59E0B;
+    margin: 8px auto;
+}
+
+.section-title-small{    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #F59E0B;
+    margin: 8px auto;
+}
+
+.section-title-large{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1B1C57;
+    margin: 8px auto;
+}
+
+.ReviewCards{
+    display: flex;
+    gap: 56px;
+}
+
+.review-card{
+    width: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px auto;
+}
+
+.review-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
+    border-radius: 16px;
+    position: relative;
+    top: -150px;
+    width: 612px;
+}
+
+.review-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #1B1C57;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.review-details{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626687;
+    opacity: 0.75;
+}
+
+.review-person-rate{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-person{
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    align-items: center;
+}
+
+.review-person-pic{
+    filter: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
+    border-radius: 50%;
+}
+
+.review-person-name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #0E1735;
+}
+
+.review-person-job{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #888B97;
+}
+
+.review-rate{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    align-items: center;
+}
+
+.review-rate{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3C4563;
+}
