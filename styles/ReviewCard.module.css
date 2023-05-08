@@ -1,0 +1,94 @@
+/* ReviewCard style start */
+.reviewCard{
+    width: 740px;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px 28px;
+    transition: transform 0.5s;
+}
+
+.reviewContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
+    border-radius: 16px;
+    position: relative;
+    top: -150px;
+    width: 612px;
+}
+
+.reviewTitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #1B1C57;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.reviewDetails{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626687;
+    opacity: 0.75;
+}
+
+.reviewPersonRate{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewPerson{
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    align-items: center;
+}
+
+.reviewPersonPic{
+    filter: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
+    border-radius: 50%;
+}
+
+.reviewPersonNameJob{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    
+}
+
+.reviewPersonName{
+    color: #0E1735;
+}
+
+.reviewPersonJob{
+    color: #888B97;
+}
+
+.reviewRate{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    align-items: center;
+}
+
+.reviewRateText{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3C4563;
+}
+/* ReviewCard style end */
