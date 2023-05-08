@@ -79,6 +79,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 8px 28px;
+    transition: transform 0.5s;
 }
 
 .review-content{
