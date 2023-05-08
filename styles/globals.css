@@ -9,12 +9,42 @@ body {
 
 }
 
+/*NavBar start*/
 .navBar{
     width: 1200px;
     height: 46px;
     background-color: aqua;
-    margin: 40px auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 40px;
 }
+
+.logoPaint{
+    margin-top: 5px; 
+    position: relative;
+}
+.logoPaint .logoPaintOrange{
+    width: 32px;
+    height: 32px;
+    background: #F59E0B;
+    border-radius: 4px 4px 24px 4px;
+    position: absolute;
+}
+
+.logoPaint .logoPaintGreen{
+    width: 32px;
+    height: 32px;
+    background: #4BE4C9;
+    border-radius: 4px 4px 24px 4px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+/*NavBar end*/
 
 .divider{
     width: 32px;
