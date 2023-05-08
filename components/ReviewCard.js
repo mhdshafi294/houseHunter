@@ -5,7 +5,7 @@ import styles from '../styles/ReviewCard.module.css'
 export default function ReviewCard(props){
     return (
         <div className={styles.reviewCard}>
-            <Image src={props.image}  className='review-house-pic' width='740' height='400'/>
+            <Image src={props.image}  className={styles.reviewHousePic} width='740' height='400'/>
             <div className={styles.reviewContent}>
                 <h4 className={styles.reviewTitle}>{props.title}</h4>
                 <p className={styles.reviewDetails}>{props.description}</p>

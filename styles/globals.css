@@ -3,11 +3,17 @@
 }
 
 body {
-    margin: 50px auto;
 }
 
 .main{
 
+}
+
+.navBar{
+    width: 1200px;
+    height: 46px;
+    background-color: aqua;
+    margin: 40px auto;
 }
 
 .divider{
@@ -15,6 +21,7 @@ body {
     height: 1px;
     background: #F59E0B;
     margin: 8px auto;
+    margin-top: 500px; /*to be deleted*/
 }
 
 .section-title-small{    

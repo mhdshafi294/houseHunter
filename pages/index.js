@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { global } from 'styled-jsx/css'
 import Reviews from '@/components/Reviews'
+import NavBar from '@/components/NavBar'
 import { Lexend } from '@next/font/google';
  
 // If loading a variable font, you don't need to specify the font weight
@@ -18,7 +19,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={lexend.className}>
-        <Reviews/>
+        <NavBar />
+        <Reviews />
       </main>
     </>
   )

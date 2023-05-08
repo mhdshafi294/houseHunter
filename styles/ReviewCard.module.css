@@ -9,6 +9,10 @@
     transition: transform 0.5s;
 }
 
+.reviewHousePic{
+    opacity: 0.7;
+}
+
 .reviewContent{
     display: flex;
     flex-direction: column;
