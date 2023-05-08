@@ -29,19 +29,11 @@ export default function Reviews(){
     // avoids a bug where content is covered up if coming from smaller screen
     useEffect(() => {
         const handleResize = () => {
-            scroll(carouselRef.current, 0);
+            scroll(carouselRef.current, carouselRef.current.scrollWidth * 0.26);
         }
         window.addEventListener('resize', handleResize);
     }, []);
 
-    const updateIndex = (newIndex) => {
-        if (newIndex < 0) {
-            newIndex = 0;
-        } else if (newIndex >= reviews.length) {
-            newIndex = reviews.length - 1;
-        }
-        setActiveIndex(newIndex);
-    };
 
     return (
         <div className='reviews'>

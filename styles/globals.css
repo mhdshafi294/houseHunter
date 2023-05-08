@@ -74,7 +74,7 @@ body {
 
 .review-card{
     width: 740px;
-    height: 650px;
+    height: 615px;
     display: flex;
     flex-direction: column;
     align-items: center;
