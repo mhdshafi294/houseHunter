@@ -3,6 +3,7 @@
 }
 
 body {
+    margin: auto;
 }
 
 .main{
@@ -11,27 +12,34 @@ body {
 
 /*NavBar start*/
 .navBar{
-    width: 1200px;
     height: 46px;
-    background-color: aqua;
-    margin: auto;
+    background-color:crimson;
+    margin: 40px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     top: 40px;
 }
+.logo{
+    height: 46px;
+    display: flex;
+}
 
 .logoPaint{
-    margin-top: 5px; 
+    width: 36px;
+    height: 36px; 
     position: relative;
 }
+
 .logoPaint .logoPaintOrange{
     width: 32px;
     height: 32px;
     background: #F59E0B;
     border-radius: 4px 4px 24px 4px;
     position: absolute;
+    top:0px;
+    left: 0px;
 }
 
 .logoPaint .logoPaintGreen{
@@ -42,6 +50,39 @@ body {
     position: absolute;
     top: 4px;
     left: 4px;
+}
+
+.logoText{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #1B1C57;
+    align-self: center;
+    margin-left: 12px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 56px;
+}
+
+.nav .navs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.nav a{
+    all: unset;
+}
+
+.nav li{
+    list-style: none;
 }
 
 /*NavBar end*/

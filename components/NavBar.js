@@ -10,12 +10,14 @@ export default function Reviews(){
                     <div className='logoPaintOrange'></div>
                     <div className='logoPaintGreen'></div>
                 </div>
-                <p className='logoText'></p>
+                <p className='logoText'>Hounter</p>
             </div>
             <ul className='nav'>
-                <Link legacyBehavior href='/about'><a><li>About</li></a></Link>
-                <Link legacyBehavior href='/article'><a><li>Article</li></a></Link>
-                <Link legacyBehavior href='/property'><a><li>Property</li></a></Link>
+                <div className='navs'>
+                    <Link legacyBehavior href='/about'><a><li>About</li></a></Link>
+                    <Link legacyBehavior href='/article'><a><li>Article</li></a></Link>
+                    <Link legacyBehavior href='/property'><a><li>Property</li></a></Link>
+                </div>
                 <Link legacyBehavior href='/signUp' className='signUp'><a><li>Sign Up</li></a></Link>
             </ul>
         </div>
