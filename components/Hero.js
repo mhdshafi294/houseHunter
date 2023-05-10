@@ -8,7 +8,7 @@ export default function Hero(){
             <div className='left'>
                 <div className='content'>
                     <h2 className='title'>
-                    find the place <br/> to live your <br/> dreams easily here
+                    find the place <br/> to live <span>your dreams</span> <br/> easily here
                     </h2>
                     <p className='description'>
 

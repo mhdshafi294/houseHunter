@@ -51,7 +51,6 @@ body {
     max-width: 1200px;
     left: 50%;
     transform: translate(-50%, 0%);
-    background-color:crimson;
     margin: 1px auto;
     display: flex;
     justify-content: space-between;
@@ -166,6 +165,7 @@ li{
 /*Hero start*/
 .hero{
     display: flex;
+    height: 720px;
 }
 .hero .left{
     width: 50%;
@@ -177,6 +177,9 @@ li{
     position: relative;
     left:50%;
     transform: translateX(-25%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .hero .left .content .title{
@@ -188,8 +191,17 @@ li{
     color: #1B1C57;
 }
 
+.hero .left .content .title span{
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #1B1C57;
+}
+
 .hero .right{
     width: 50%;
+    background: linear-gradient(16.74deg, #0C1537 -6.09%, rgba(12, 21, 55, 0) 32.63%), url("../public/imgs/heroHouse.jpg");
+    border-radius: 0px 0px 0px 80px;
 }
 /*Hero end*/
 
