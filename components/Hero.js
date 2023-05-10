@@ -42,7 +42,6 @@ export default function Hero(){
                 </div>
             </div>
             <div className='right'>
-
             </div>
         </div>
     )
