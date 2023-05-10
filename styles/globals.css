@@ -167,8 +167,7 @@ li{
 .hero{
     display: flex;
     height: 720px;
-    background:rgba(130, 255, 210, 1);
-    background: linear-gradient(126deg, rgba(130, 255, 210, 1) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%)
+    background: linear-gradient(135deg, rgba(130,255,232,0.3) 10%, rgba(255,255,255,0) 40%)
 }
 .hero .left{
     width: 50%;
