@@ -55,6 +55,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 .logo{
     height: 46px;
@@ -166,6 +167,8 @@ li{
 .hero{
     display: flex;
     height: 720px;
+    background:rgba(130, 255, 210, 1);
+    background: linear-gradient(126deg, rgba(130, 255, 210, 1) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%)
 }
 .hero .left{
     width: 50%;
@@ -198,6 +201,30 @@ li{
     -webkit-text-stroke-color: #1B1C57;
 }
 
+.hero .left .content .description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #626687;
+    opacity: 0.75;
+}
+
+.hero .left .content .partnership{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #888B97;
+}
+
+.hero .left .content .partners{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
+
 .hero .right{
     width: 50%;
     background: linear-gradient(16.74deg, #0C1537 -6.09%, rgba(12, 21, 55, 0) 32.63%), url("../public/imgs/heroHouse.jpg");
@@ -224,6 +251,7 @@ li{
     justify-content: center;
     align-items: center;
     gap: 16px;
+    margin-bottom: 50px;
 }
 
 .indicators .indicator-buttons{

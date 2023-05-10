@@ -8,19 +8,22 @@ export default function Hero(){
             <div className='left'>
                 <div className='content'>
                     <h2 className='title'>
-                    find the place <br/> to live <span>your dreams</span> <br/> easily here
+                        find the place <br/> to live <span>your dreams</span> <br/> easily here
                     </h2>
                     <p className='description'>
-
+                        Everything you need about finding your place to live will be here, where it will be easier for you
                     </p>
                     <div className='searchBar'>
 
                     </div>
                     <p className='partnership'>
-
+                        Our Partnership 
                     </p>
                     <div className='partners'>
-
+                        <Image src='/../public/imgs/traveloka_logo 2.png' width='83' height='18'/>
+                        <Image src='/../public/imgs/tiket_logo 5.png' width='83' height='23'/>
+                        <Image src='/../public/imgs/airbnb_logo 3.png' width='83' height='26'/>
+                        <Image src='/../public/imgs/tripadvisor_logo.png' width='83' height='15'/>
                     </div>
                 </div>
             </div>

@@ -30,9 +30,10 @@ export default function Reviews(){
     useEffect(() => {
         const handleResize = () => {
             if (carouselRef.current) {
-                scroll(carouselRef.current, carouselRef.current.scrollWidth * 0.26);
+                scroll(carouselRef.current, carouselRef.current.scrollWidth * 0.21);
             }
         }
+        handleResize();
         window.addEventListener('resize', handleResize);
     }, []);
 
