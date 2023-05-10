@@ -3,6 +3,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Hero(){
+    const [searchInput, setSearchInput] = useState("");
+
+    const handleChange = (e) => {
+        e.preventDefault();
+        setSearchInput(e.target.value);
+        };
+
     return(
         <div className='hero'>
             <div className='left'>
@@ -14,7 +21,14 @@ export default function Hero(){
                         Everything you need about finding your place to live will be here, where it will be easier for you
                     </p>
                     <div className='searchBar'>
-
+                        <Image className='fluent' src="/../public/imgs/fluent_location-16-filled.png" width="24" height="24"/>
+                        <input
+                            type="text"
+                            placeholder="Search for the location you want!"
+                            onChange={handleChange}
+                            value={searchInput} 
+                        />
+                        <button className='btn'>search <span>&#8250;</span></button>
                     </div>
                     <p className='partnership'>
                         Our Partnership 

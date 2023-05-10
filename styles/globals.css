@@ -209,6 +209,56 @@ li{
     opacity: 0.75;
 }
 
+.hero .left .content .searchBar{
+    position: relative;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 4px 4px 24px;
+    gap: 16px;
+    height: 56px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E0E3EB;
+    border-radius: 32px;
+}
+
+.hero .left .content .searchBar input{
+    all:unset;
+    width: 61%;
+}
+
+.hero .left .content .searchBar .btn{
+    all:unset;
+    cursor:pointer;
+    position: relative;
+    right: -16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 16px;
+    width: 17%;
+    max-height: 100%;
+    background: #10B981;
+    border-radius: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-align:center;
+    color: #FFFFFF;
+}
+
+.hero .left .content .searchBar .btn span{
+    font-size: 2rem;
+    font-weight: 225;
+    line-height: 22px;
+    position: relative;
+    top: -4px;
+}
+
 .hero .left .content .partnership{
     font-style: normal;
     font-weight: 400;
