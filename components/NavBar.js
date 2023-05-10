@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Reviews(){
+    const [signedIn, setSignedIn] = useState(false);
 
     return(
         <div className='navBar'>
@@ -14,11 +16,11 @@ export default function Reviews(){
             </div>
             <ul className='nav'>
                 <div className='navs'>
-                    <Link legacyBehavior href='/about'><a><li>About</li></a></Link>
-                    <Link legacyBehavior href='/article'><a><li>Article</li></a></Link>
-                    <Link legacyBehavior href='/property'><a><li>Property</li></a></Link>
+                    <Link  href='/about'><li>About</li></Link>
+                    <Link  href='/article'><li>Article</li></Link>
+                    <Link  href='/property'><li>Property <span>&#8250;</span> </li></Link>
                 </div>
-                <Link legacyBehavior href='/signUp' className='signUp'><a><li>Sign Up</li></a></Link>
+                {!signedIn && <Link href='/signUp' className='signUp'><li>Sign Up!</li></Link>}
             </ul>
         </div>
     )

@@ -12,14 +12,18 @@ body {
 
 /*NavBar start*/
 .navBar{
+    position: absolute;
+    top: 46px;
     height: 46px;
+    width: 100%;
+    max-width: 1200px;
+    left: 50%;
+    transform: translate(-50%, 0%);
     background-color:crimson;
-    margin: 40px 120px;
+    margin: 1px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    top: 40px;
 }
 .logo{
     height: 46px;
@@ -77,12 +81,53 @@ body {
     gap: 24px;
 }
 
-.nav a{
-    all: unset;
+a{
+    text-decoration: none;
 }
 
-.nav li{
+li{
     list-style: none;
+}
+
+.navs li{
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 32px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #F0F3FD;
+}
+
+.navs li span{
+    transform: rotate(90deg);
+    font-size: 2.3rem;
+    font-weight: 250;
+    margin-left: 10px;
+}
+
+.nav .signUp li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 46px;
+    background: #D1FAE5;
+    border-radius: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #047857;
 }
 
 /*NavBar end*/
