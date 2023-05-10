@@ -29,7 +29,9 @@ export default function Reviews(){
     // avoids a bug where content is covered up if coming from smaller screen
     useEffect(() => {
         const handleResize = () => {
-            scroll(carouselRef.current, carouselRef.current.scrollWidth * 0.26);
+            if (carouselRef.current) {
+                scroll(carouselRef.current, carouselRef.current.scrollWidth * 0.26);
+            }
         }
         window.addEventListener('resize', handleResize);
     }, []);

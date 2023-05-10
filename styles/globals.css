@@ -3,12 +3,44 @@
 }
 
 body {
-    margin: auto;
+    margin: 0px;
 }
 
 .main{
 
 }
+
+/*Global start*/
+.divider{
+    width: 32px;
+    height: 1px;
+    background: #F59E0B;
+    margin: 8px auto;
+    margin-top: 500px; /*to be deleted*/
+}
+
+.section-title-small{    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #F59E0B;
+    margin: 8px auto;
+}
+
+.section-title-large{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1B1C57;
+    margin: 8px auto;
+}
+/*Global end*/
 
 /*NavBar start*/
 .navBar{
@@ -129,39 +161,39 @@ li{
     line-height: 22px;
     color: #047857;
 }
-
 /*NavBar end*/
 
-.divider{
-    width: 32px;
-    height: 1px;
-    background: #F59E0B;
-    margin: 8px auto;
-    margin-top: 500px; /*to be deleted*/
+/*Hero start*/
+.hero{
+    display: flex;
+}
+.hero .left{
+    width: 50%;
+    position: relative;
+}
+.hero .left .content{
+    margin-top: 182px;
+    max-width: 496px;
+    position: relative;
+    left:50%;
+    transform: translateX(-25%);
 }
 
-.section-title-small{    
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    text-transform: capitalize;
-    color: #F59E0B;
-    margin: 8px auto;
-}
-
-.section-title-large{
+.hero .left .content .title{
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 40px;
-    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
     text-transform: capitalize;
     color: #1B1C57;
-    margin: 8px auto;
 }
 
+.hero .right{
+    width: 50%;
+}
+/*Hero end*/
+
+/*Review start*/
 .ReviewCards{
     margin: 25px 0px;
     display: flex;
@@ -194,4 +226,4 @@ li{
 .indicators .indicator-symbol-active{
     background: #3C4563;
 }
-
+/*Review end*/
