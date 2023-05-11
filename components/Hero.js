@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import StatsCard from './StatsCard'
+import { stats } from '../constants/constants.js'
 
 export default function Hero(){
     const [searchInput, setSearchInput] = useState("");
@@ -44,7 +45,14 @@ export default function Hero(){
             </div>
             <div className='right'>
                 <div className='stats'>
-                    <StatsCard />
+                    {
+                    stats.map((stat, index) =>(
+                        <StatsCard 
+                            key={index}
+                            stat={stat}
+                        />
+                        ))
+                    }
                 </div>
             </div>
         </div>

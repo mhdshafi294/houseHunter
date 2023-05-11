@@ -32,7 +32,7 @@ export const stats = [
   {
     title: '1K+ People',
     sentence: "Successfully Getting Home",
-    images: []
+    images: ['/../public/imgs/stats/Ellipse4.png','/../public/imgs/stats/Ellipse5.png','/../public/imgs/stats/Ellipse6.png']
   },
   {
     title: '56 Houses',

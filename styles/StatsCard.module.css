@@ -4,7 +4,6 @@
     align-items: center;
     padding: 24px;
     gap: 16px;
-    width: 328px;
     height: 104px;
     background: #FFFFFF;
     box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
@@ -12,17 +11,46 @@
 }
 
 .statsImages{
+}
 
+.statsImages .statsImage{
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    filter: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
+    object-fit: cover;
+    margin-left: -29px;
+}
+
+.statsCard:nth-child(2) .statsImages .statsImage{
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.statsImage:nth-child(1) {
+    margin-left: 0px;
 }
 
 .statsTexts{
-
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
 }
 
 .statsTitle{
-    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C57;
+    margin: 0px;
 }
 
 .statsSentence{
-
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #68799F;
+    margin: 0px;
 }

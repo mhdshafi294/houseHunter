@@ -167,8 +167,9 @@ li{
 .hero{
     display: flex;
     height: 720px;
-    background: linear-gradient(135deg, rgba(130,255,232,0.3) 10%, rgba(255,255,255,0) 40%)
+    background: linear-gradient(135deg, rgba(130,255,232,0.3) 10%, rgba(255,255,255,0) 40%);
 }
+
 .hero .left{
     width: 50%;
     position: relative;
@@ -279,15 +280,23 @@ li{
     background: linear-gradient(16.74deg, #0C1537 -6.09%, rgba(12, 21, 55, 0) 32.63%), url("../public/imgs/heroHouse.jpg");
     border-radius: 0px 0px 0px 80px;
     position: relative;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
 }
-
+.hero .right::-webkit-scrollbar {
+    display: none;
+}
 .hero .right .stats{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
     padding: 0px;
     gap: 16px;
     height: 104px;
+    width: max-content;
     position: absolute;
     left: 48px;
     bottom: 48px;
