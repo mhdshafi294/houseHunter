@@ -278,6 +278,19 @@ li{
     width: 50%;
     background: linear-gradient(16.74deg, #0C1537 -6.09%, rgba(12, 21, 55, 0) 32.63%), url("../public/imgs/heroHouse.jpg");
     border-radius: 0px 0px 0px 80px;
+    position: relative;
+}
+
+.hero .right .stats{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    height: 104px;
+    position: absolute;
+    left: 48px;
+    bottom: 48px;
 }
 /*Hero end*/
 

@@ -27,3 +27,21 @@ export const reviews = [
     rate:4.6,
   }
 ];
+
+export const stats = [
+  {
+    title: '1K+ People',
+    sentence: "Successfully Getting Home",
+    images: []
+  },
+  {
+    title: '56 Houses',
+    sentence: "Sold Monthly",
+    images: ['/../public/imgs/stats/Rectangle12.png']
+  },
+  {
+    title: '4K+',
+    sentence: "People Looking for New Homes",
+    images: ['/../public/imgs/stats/Ellipse6_1.png'],
+  }
+];
