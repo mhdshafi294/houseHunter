@@ -44,6 +44,9 @@ export default function Hero(){
                 </div>
             </div>
             <div className='right'>
+                <div className='redCorner'></div>
+                <div className='blueCorner'></div>
+                <div className='yellowCorner'></div>
                 <div className='stats'>
                     {
                     stats.map((stat, index) =>(
