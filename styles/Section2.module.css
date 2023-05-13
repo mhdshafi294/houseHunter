@@ -3,7 +3,12 @@
     padding: 0px 120px;
     position: relative;
 }
-
+.section2 .sectionHeader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 138px;
+}
 .section2 .title{
     width: 294px;
     height: 70px;
@@ -11,9 +16,6 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 12px;
-    position: absolute;
-    top:0px;
-    left: 120px;
 }
 
 .section2 .title .smallTitle{
@@ -58,8 +60,6 @@
     gap: 32px;
     max-width: 493px;
     height: 52px;
-    position: relative;
-    left: 50%;
 }
 
 .navs li{
@@ -77,4 +77,29 @@
     font-size: 18px;
     line-height: 28px;
     color: #888B97;
+}
+
+.navs .avtiveNav{
+    background: #D1FAE5;
+    color: #10B981;
+}
+
+.section2 .sectionHeader .buttons{
+    display: flex;
+    gap: 8px;
+}
+
+.section2 .sectionHeader .buttons div{
+    width: 60px;
+    height: 52px;
+    background: #E0E3EB;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .sectionHeader .buttons .arrowRight{
+    background: #10B981;
+    color: #E0E3EB;
 }
