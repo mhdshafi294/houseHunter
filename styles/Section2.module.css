@@ -1,4 +1,80 @@
 .section2{
     margin: 120px 0px;
     padding: 0px 120px;
+    position: relative;
+}
+
+.section2 .title{
+    width: 294px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    position: absolute;
+    top:0px;
+    left: 120px;
+}
+
+.section2 .title .smallTitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #F59E0B;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.divider{
+    width: 32px;
+    height: 1px;
+    background: #F59E0B;
+}
+
+.section2 .title .smallTitleText{
+    all: unset;
+}
+
+.section2 .title .largeTitle{
+    all:unset;
+    align-self: flex-end;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #1B1C57;
+}
+
+.section2 .navs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+    max-width: 493px;
+    height: 52px;
+    position: relative;
+    left: 50%;
+}
+
+.navs li{
+    padding: 12px 24px;
+    gap: 8px;
+    width: 119px;
+    height: 52px;
+    border: 1px solid #E0E3EB;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #888B97;
 }

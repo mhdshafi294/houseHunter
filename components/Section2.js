@@ -1,5 +1,5 @@
 
-
+import Link from 'next/link'
 import styles from '../styles/Section2.module.css'
 
 export default function Section2(){
@@ -10,7 +10,12 @@ export default function Section2(){
                     <div className={styles.divider}></div>
                     <p className={styles.smallTitleText}>Our Recommendation</p>
                 </div>
-                <h2 className={styles.largeTitleText}>Featured House</h2>
+                <h2 className={styles.largeTitle}>Featured House</h2>
+            </div>
+            <div className={styles.navs}>
+                <Link  href='/about'><li>House</li></Link>
+                <Link  href='/article'><li>Villa</li></Link>
+                <Link  href='/property'><li>Apartment</li></Link>
             </div>
         </div>
     )

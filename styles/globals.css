@@ -121,7 +121,7 @@ li{
     list-style: none;
 }
 
-.navs li{
+.nav .navs li{
     padding: 8px 16px;
     display: flex;
     justify-content: center;
@@ -140,7 +140,7 @@ li{
     color: #F0F3FD;
 }
 
-.navs li span{
+.nav .navs li span{
     transform: rotate(90deg);
     font-size: 2.3rem;
     font-weight: 250;
