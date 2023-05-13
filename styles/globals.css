@@ -167,6 +167,7 @@ li{
 .hero{
     display: flex;
     height: 720px;
+    margin-bottom: 60px;
     background: linear-gradient(135deg, rgba(130,255,232,0.4654236694677871) 0%, rgba(130,255,232,0.5494572829131652) 13%, rgba(255,255,255,0) 38%);
 }
 
@@ -287,6 +288,7 @@ li{
     position: relative;
     left: 0;
     padding-left: 48px;
+    padding-right: 24px;
     top: 490px;
     width: 100%;
     overflow-x: auto;
