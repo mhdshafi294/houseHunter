@@ -47,15 +47,17 @@ export default function Hero(){
                 <div className='redCorner'></div>
                 <div className='blueCorner'></div>
                 <div className='yellowCorner'></div>
-                <div className='stats'>
-                    {
-                    stats.map((stat, index) =>(
-                        <StatsCard 
-                            key={index}
-                            stat={stat}
-                        />
-                        ))
-                    }
+                <div className='statsScroll'>
+                    <div className='stats'>
+                        {
+                        stats.map((stat, index) =>(
+                            <StatsCard 
+                                key={index}
+                                stat={stat}
+                            />
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
         </div>

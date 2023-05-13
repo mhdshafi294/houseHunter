@@ -280,14 +280,24 @@ li{
     background: linear-gradient(16.74deg, #0C1537 -6.09%, rgba(12, 21, 55, 0) 32.63%), url("../public/imgs/heroHouse.jpg");
     border-radius: 0px 0px 0px 80px;
     position: relative;
+    overflow-x: hidden;
+}
+
+.hero .right .statsScroll{
+    position: relative;
+    left: 0;
+    padding-left: 48px;
+    top: 490px;
+    width: 100%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     -ms-overflow-style: none;
     scrollbar-width: none; /* Firefox */
 }
-.hero .right::-webkit-scrollbar {
+.hero .right .statsScroll::-webkit-scrollbar {
     display: none;
 }
+
 .hero .right .stats{
     display: flex;
     flex-direction: row;
@@ -297,12 +307,10 @@ li{
     gap: 16px;
     height: 104px;
     width: max-content;
-    position: absolute;
-    left: 48px;
-    bottom: 48px;
 }
+
 .hero .right .redCorner{
-    position: absolute;
+    position: relative;
     top: 141px;
     left: 116px;
     width: 66.5px;
