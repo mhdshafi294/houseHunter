@@ -45,3 +45,42 @@ export const stats = [
     images: ['/../public/imgs/stats/Ellipse6_1.png'],
   }
 ];
+
+export const houseInfo = [
+  {
+    name: 'Roselands House',
+    price: "35.000.000",
+    image: '/../public/imgs/s2/Rectangle15.jpg',
+    classification:'popular',
+    ownerName:'Dianne Russell',
+    ownerImage:'/../public/imgs/ellipse6.png',
+    location:'Manchester, Kentucky',
+  },
+  {
+    name: 'Woodlandside',
+    price: "20.000.000",
+    image: '/../public/imgs/s2/Rectangle15_1.jpg',
+    classification:'New House',
+    ownerName:'Robert Fox',
+    ownerImage:'/../public/imgs/ellipse8.png',
+    location:'Dr. San Jose, South Dakota',
+  },
+  {
+    name: 'The Old Lighthouse',
+    price: "44.000.000",
+    image: '/../public/imgs/s2/Rectangle15_2.jpg',
+    classification:'Best Deals',
+    ownerName:'Ronald Richards',
+    ownerImage:'/../public/imgs/ellipse9.png',
+    location:'Santa Ana, Illinois',
+  },
+  {
+    name: "Cosmo's House",
+    price: "22.000.000",
+    image: '/../public/imgs/s2/Rectangle15_3.jpg',
+    classification:'popular',
+    ownerName:'Jenny Wilson',
+    ownerImage:'/../public/imgs/ellipse10.png',
+    location:'Preston Rd. Inglewood, Maine 98380',
+  },
+]
