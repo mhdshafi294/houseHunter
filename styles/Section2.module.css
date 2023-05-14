@@ -1,9 +1,9 @@
 .section2{
     margin: 120px 0px;
-    padding: 0px 120px;
     position: relative;
 }
 .section2 .sectionHeader{
+    padding-left: 120px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -104,6 +104,16 @@
     color: #E0E3EB;
 }
 
+.section2 .scrollContainer{
+    padding-left: 120px;
+    padding-right: 120px;
+    overflow:auto;
+}
+.section2 .scrollContainer::-webkit-scrollbar {
+    display: none;
+}
 .section2 .houseCards{
     margin-top: 40px;
+    display: flex;
+    gap: 40px;
 }

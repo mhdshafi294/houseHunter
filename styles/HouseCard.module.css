@@ -1,7 +1,78 @@
 .houseCard{
+    position: relative;
+    width: 340px;
+    border-radius: 2px;
+}
 
+.houseCard .badge{
+    position: absolute;
+    left: 16px;
+    top: 332px;
+    background-color: aliceblue;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 16px;
+    gap: 10px;
+}
+
+.houseCard .houseImage{
+    object-fit: cover;
+    border-radius: 24px;
+    width: 340px;
+    height: 382px;
+}
+
+.houseCard .name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0E1735;
 }
 
 .houseCard .price{
-    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3C4563;
+}
+
+.houseCard .owner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.houseCard .owner .ownerImage{
+    border-radius: 50%;
+}
+
+.houseCard .nameAndLocation{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.houseCard .owner .ownerName{
+    all: unset;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0E1735;
+}
+
+.houseCard .owner .location{
+    all: unset;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #888B97;
 }
