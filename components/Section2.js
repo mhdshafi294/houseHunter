@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import HouseCard from './HouseCard'
 import styles from '../styles/Section2.module.css'
+import { BsFillHouseDoorFill } from 'react-icons/bs';
+import { MdVilla, MdApartment } from 'react-icons/md';
 import { houseInfo, sectionTwoNavs } from '../constants/constants.js'
 
 export default function Section2(){
@@ -16,6 +18,9 @@ export default function Section2(){
                 className={item.active? styles.acvtiveNav : ''} 
                 onClick={() => makeActive(item.type)}
                 >
+                    {item.type === 'House' && <BsFillHouseDoorFill />}
+                    {item.type === 'Villa' && <MdVilla />}
+                    {item.type === 'Apartment' && <MdApartment />}
                     {item.type}
             </li>
         </Link>
