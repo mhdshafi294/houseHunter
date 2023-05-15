@@ -27,7 +27,7 @@ export default function HouseCard({house}){
         borderRadius: '32px',
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         padding: '8px 16px',
         gap: '10px',
         backgroundColor: badgeBackGround,
