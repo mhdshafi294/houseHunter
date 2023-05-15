@@ -88,3 +88,21 @@ export const houseInfo = [
     type: 'Villa'
   },
 ]
+
+export const sectionTwoNavs = [
+  {
+    type:'House',
+    active: true,
+    link:'#'
+  },
+  {
+    type:'Villa',
+    active: false,
+    link:'#'
+  },
+  {
+    type:'Apartment',
+    active: false,
+    link:'#'
+  }
+]

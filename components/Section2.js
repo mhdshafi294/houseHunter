@@ -3,11 +3,31 @@ import Link from 'next/link'
 import Image from 'next/image'
 import HouseCard from './HouseCard'
 import styles from '../styles/Section2.module.css'
-import { houseInfo } from '../constants/constants.js'
+import { houseInfo, sectionTwoNavs } from '../constants/constants.js'
 
 export default function Section2(){
     const [scrolling, setScrolling] = useState(0);
+    const [sectionNavs, setSectionNavs] = useState(sectionTwoNavs);
     const carouselRef = useRef();
+
+    const navs = sectionNavs.map(item => (
+        <Link key={item.type} href={item.link}>
+            <li 
+                className={item.active? styles.acvtiveNav : ''} 
+                onClick={() => makeActive(item.type)}
+                >
+                    {item.type}
+            </li>
+        </Link>
+    ))
+
+    const makeActive = (type) => {
+        setSectionNavs(prev => {
+            return prev.map(item => {
+                return item.type === type ? {...item, active:true} : {...item, active:false}
+            })
+        })
+    }
 
     const scroll = (node, left) => {
         return node.scrollTo({ left, behavior: 'smooth' });
@@ -39,7 +59,9 @@ export default function Section2(){
 
     useEffect(() => {
         const handleResize = () => {
-            scroll(carouselRef.current, 0);
+            if (carouselRef.current) {
+                scroll(carouselRef.current, 0);
+            }
         }
     
         window.addEventListener('resize', handleResize);
@@ -56,9 +78,7 @@ export default function Section2(){
                     <h2 className={styles.largeTitle}>Featured House</h2>
                 </div>
                 <div className={styles.navs}>
-                    <Link  href='#'><li className={styles.avtiveNav}>House</li></Link>
-                    <Link  href='#'><li>Villa</li></Link>
-                    <Link  href='#'><li>Apartment</li></Link>
+                    {navs}
                 </div>
                 <div className={styles.buttons}>
                     <button className={styles.arrowLeft} onClick={(e) => moveLeft(e)}><Image src="/../public/imgs/s2/eva_arrow-backward.png" width="28" height="28"/></button>
