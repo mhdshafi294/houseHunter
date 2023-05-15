@@ -1,4 +1,4 @@
-
+import {useState, useEffect, useRef} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import HouseCard from './HouseCard'
@@ -6,6 +6,45 @@ import styles from '../styles/Section2.module.css'
 import { houseInfo } from '../constants/constants.js'
 
 export default function Section2(){
+    const [scrolling, setScrolling] = useState(0);
+    const carouselRef = useRef();
+
+    const scroll = (node, left) => {
+        return node.scrollTo({ left, behavior: 'smooth' });
+    }
+
+    const moveRight = (e) => {
+        e.preventDefault();
+        if (carouselRef.current) {
+            const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * ((scrolling + 1) / houseInfo.length));
+            scroll(carouselRef.current, scrollLeft);
+        }
+    }
+
+    const moveLeft = (e) => {
+        e.preventDefault();
+        if (carouselRef.current) {
+            const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * ((scrolling - 1) / houseInfo.length));
+            scroll(carouselRef.current, scrollLeft);
+        }
+    }
+
+    const handleScroll = () => {
+        if (carouselRef.current) {
+            const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * houseInfo.length);
+    
+            setScrolling(index);
+        }
+    }
+
+    useEffect(() => {
+        const handleResize = () => {
+            scroll(carouselRef.current, 0);
+        }
+    
+        window.addEventListener('resize', handleResize);
+    }, []);
+
     return(
         <div className={styles.section2}>
             <div className={styles.sectionHeader}>
@@ -17,16 +56,16 @@ export default function Section2(){
                     <h2 className={styles.largeTitle}>Featured House</h2>
                 </div>
                 <div className={styles.navs}>
-                    <Link  href='/about'><li className={styles.avtiveNav}>House</li></Link>
-                    <Link  href='/article'><li>Villa</li></Link>
-                    <Link  href='/property'><li>Apartment</li></Link>
+                    <Link  href='#'><li className={styles.avtiveNav}>House</li></Link>
+                    <Link  href='#'><li>Villa</li></Link>
+                    <Link  href='#'><li>Apartment</li></Link>
                 </div>
                 <div className={styles.buttons}>
-                    <div className={styles.arrowLeft}><Image src="/../public/imgs/s2/eva_arrow-backward.png" width="28" height="28"/></div>
-                    <div className={styles.arrowRight}><Image src="/../public/imgs/s2/eva_arrow-forward.png" width="28" height="28"/></div>
+                    <button className={styles.arrowLeft} onClick={(e) => moveLeft(e)}><Image src="/../public/imgs/s2/eva_arrow-backward.png" width="28" height="28"/></button>
+                    <button className={styles.arrowRight} onClick={(e) => moveRight(e)}><Image src="/../public/imgs/s2/eva_arrow-forward.png" width="28" height="28"/></button>
                 </div>
             </div>
-            <div className={styles.scrollContainer}>
+            <div className={styles.scrollContainer} ref={carouselRef} onScroll={handleScroll}>
                 <div className={styles.houseCards}>
                     {houseInfo.map((house, index) => {
                         return (

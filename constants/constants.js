@@ -51,10 +51,11 @@ export const houseInfo = [
     name: 'Roselands House',
     price: "35.000.000",
     image: '/../public/imgs/rectangle15.jpg',
-    badge: 'popular',
+    badge: 'Popular',
     ownerName: 'Dianne Russell',
     ownerImage: '/../public/imgs/ellipse6.png',
     location: 'Manchester, Kentucky',
+    type: 'House'
   },
   {
     name: 'Woodlandside',
@@ -64,6 +65,7 @@ export const houseInfo = [
     ownerName: 'Robert Fox',
     ownerImage: '/../public/imgs/ellipse8.jpg',
     location: 'Dr. San Jose, South Dakota',
+    type: 'House'
   },
   {
     name: 'The Old Lighthouse',
@@ -73,14 +75,16 @@ export const houseInfo = [
     ownerName: 'Ronald Richards',
     ownerImage: '/../public/imgs/ellipse9.jpg',
     location: 'Santa Ana, Illinois',
+    type: 'Apartment'
   },
   {
     name: "Cosmo's House",
     price: "22.000.000",
     image: '/../public/imgs/rectangle15_3.jpg',
-    badge: 'popular',
+    badge: 'Popular',
     ownerName: 'Jenny Wilson',
     ownerImage: '/../public/imgs/ellipse10.jpg',
     location: 'Preston Rd. Inglewood, Maine 98380',
+    type: 'Villa'
   },
 ]

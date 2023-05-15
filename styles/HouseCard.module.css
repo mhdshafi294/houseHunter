@@ -2,6 +2,7 @@
     position: relative;
     width: 340px;
     border-radius: 2px;
+    margin-right: 40px;
 }
 
 .houseCard .badge{

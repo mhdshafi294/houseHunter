@@ -89,7 +89,7 @@
     gap: 8px;
 }
 
-.section2 .sectionHeader .buttons div{
+.section2 .sectionHeader .buttons button{
     width: 60px;
     height: 52px;
     background: #E0E3EB;
@@ -97,6 +97,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    border: none;
 }
 
 .section2 .sectionHeader .buttons .arrowRight{
@@ -104,9 +106,12 @@
     color: #E0E3EB;
 }
 
+.section2 .sectionHeader .buttons button:focus {
+    outline: none;
+}
+
 .section2 .scrollContainer{
     padding-left: 120px;
-    padding-right: 120px;
     overflow:auto;
 }
 .section2 .scrollContainer::-webkit-scrollbar {
@@ -115,5 +120,5 @@
 .section2 .houseCards{
     margin-top: 40px;
     display: flex;
-    gap: 40px;
+    justify-content: flex-start;
 }
