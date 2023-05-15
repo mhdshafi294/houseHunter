@@ -4,15 +4,20 @@ import styles from '../styles/HouseCard.module.css'
 export default function HouseCard({house}){
     let badgeBackGround = '';
     let badgeColor = '';
+    let badgeImage = '';
+
     if(house.badge === 'Popular'){
         badgeBackGround = '#FEE2E2';
         badgeColor = '#EF4444';
+        badgeImage = '/../public/imgs/ant-design_fire-filled.png';
     } else if(house.badge === 'New House'){
         badgeBackGround = '#DBEAFE';
         badgeColor = '#1D4ED8';
+        badgeImage = '/../public/imgs/ph_house-fill-blue.png';
     } else if(house.badge === 'Best Deals'){
         badgeBackGround = '#D1FAE5';
         badgeColor = '#047857';
+        badgeImage = '/../public/imgs/entypo_wallet.png';
     }
     
     const badgeStyles = {
@@ -31,7 +36,10 @@ export default function HouseCard({house}){
 
     return(
         <div className={styles.houseCard}>
-            <div className={styles.badge} style={badgeStyles}>{house.badge}</div>
+            <div className={styles.badge} style={badgeStyles}>
+                <Image src={badgeImage} className={styles.badgeImage} width='16' height='16'/>
+                {house.badge}
+            </div>
             <Image src={house.image} className={styles.houseImage} width='340' height='382'/>
             <p className={styles.name}>{house.name}</p>
             <p className={styles.price}>$ {house.price}</p>

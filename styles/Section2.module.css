@@ -18,6 +18,12 @@
     gap: 12px;
 }
 
+.divider{
+    width: 32px;
+    height: 1px;
+    background: #F59E0B;
+}
+
 .section2 .title .smallTitle{
     font-style: normal;
     font-weight: 500;
@@ -32,18 +38,12 @@
     align-self: flex-start;
 }
 
-.divider{
-    width: 32px;
-    height: 1px;
-    background: #F59E0B;
-}
-
-.section2 .title .smallTitleText{
-    all: unset;
+.section2 .title .smallTitle p{
+    margin: 0px;
 }
 
 .section2 .title .largeTitle{
-    all:unset;
+    margin: 0px;
     align-self: flex-end;
     font-style: normal;
     font-weight: 600;
