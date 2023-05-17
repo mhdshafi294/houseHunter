@@ -1,12 +1,22 @@
 
 import Image from 'next/image'
 import styles from '../styles/Tour.module.css'
+import YouTube from "react-youtube";
 import { MdKingBed, MdBathtub, MdGarage } from 'react-icons/md';
 import { GiStairs } from 'react-icons/gi';
 import { BsTelephoneFill,BsPlayFill } from 'react-icons/bs';
 import { houseDetail } from '../constants/constants.js'
 
 export default function Tour(){
+    // This const is for YouTube component.
+    const opts = {
+        height: "488",
+        width: "416",
+        playerVars: {
+        autoplay: 1,
+        },
+    };
+    
     return(
         <section className={styles.tour}>
             <div className={styles.left}>
@@ -56,7 +66,7 @@ export default function Tour(){
                             <p className={styles.name}>Dianne Russell</p>
                             <p className={styles.job}>Manager Director</p>
                         </div>
-                        <button className={styles.contactButton}><BsTelephoneFill /> Contact Now</button>
+                        <button className={styles.contactButton} href="tel:+963-394-204-793"><BsTelephoneFill /> Contact Now</button>
                     </div>
                 </div>
             </div>
@@ -65,6 +75,7 @@ export default function Tour(){
                     <Image src='/../public/imgs/Rectangle18.jpg' className={styles.contactPic} width='296' height='168'/>
                     <Image src='/../public/imgs/Rectangle19.jpg' className={styles.contactPic} width='96' height='80'/>
                     <Image src='/../public/imgs/Rectangle20.jpg' className={styles.contactPic} width='96' height='80'/>
+                    {/* <YouTube videoId="2g811Eo7K8U" opts={opts} /> */}
                 </div>
                 <div className={styles.video}>
                     <Image src='/../public/imgs/Rectangle17.jpg' className={styles.contactPic} width='488' height='416'/>
