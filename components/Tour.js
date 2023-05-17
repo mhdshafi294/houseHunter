@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Tour.module.css'
 import { MdKingBed, MdBathtub, MdGarage } from 'react-icons/md';
 import { GiStairs } from 'react-icons/gi';
-import { BsTelephoneFill } from 'react-icons/bs';
+import { BsTelephoneFill,BsPlayFill } from 'react-icons/bs';
 import { houseDetail } from '../constants/constants.js'
 
 export default function Tour(){
@@ -62,10 +62,13 @@ export default function Tour(){
             </div>
             <div className={styles.media}>
                 <div className={styles.imgs}>
-
+                    <Image src='/../public/imgs/Rectangle18.jpg' className={styles.contactPic} width='296' height='168'/>
+                    <Image src='/../public/imgs/Rectangle19.jpg' className={styles.contactPic} width='96' height='80'/>
+                    <Image src='/../public/imgs/Rectangle20.jpg' className={styles.contactPic} width='96' height='80'/>
                 </div>
                 <div className={styles.video}>
-
+                    <Image src='/../public/imgs/Rectangle17.jpg' className={styles.contactPic} width='488' height='416'/>
+                    <button className={styles.videoButton}><BsPlayFill /></button>
                 </div>
             </div>
         </section>

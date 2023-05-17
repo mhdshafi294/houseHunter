@@ -2,12 +2,12 @@
     margin: 120px;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 148px;
 }
 
 .tour .left{
-    max-width: 550px;
+    width: 524px;
 }
 
 .title{
@@ -66,9 +66,6 @@
     opacity: 0.75;
 }
 
-.tour .infos .detail{
-
-}
 
 .tour .infos .detail h6{
     margin: 16px 0px;
@@ -97,6 +94,11 @@
     line-height: 20px;
     text-transform: capitalize;
     color: #888B97;
+    transition: 0.3s;
+}
+
+.tour .infos .detail .details .d1:hover{
+    transform: translateX(1rem);
 }
 
 .tour .infos .detail .details .d1 p{
@@ -173,3 +175,72 @@
 .tour .infos .contact .contactButton:hover {
     background: #08c888;
 }
+
+.tour .media{
+    width: 528px;
+    position: relative;
+}
+
+.tour .media img{
+    border-radius: 4px;
+}
+
+.tour .media .imgs{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 12px;
+    z-index: 1;
+}
+
+.tour .media .imgs img{
+    transition: 0.3s;
+}
+
+.tour .media .imgs img:hover{
+    transition: 0.3s;
+    transform: scale(1.1) translateX(-25px);
+}
+
+.tour .media .video{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 488px;
+    height:416px;
+    transition: 0.3s;
+}
+
+.tour .media .video:hover{
+    z-index: 2;
+    transform: scale(1.1) translateX(-25px);
+}
+
+.tour .media .video .videoButton{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2.5px);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    color: white;
+    font-size: 2rem;
+
+    display: grid;
+    place-items: center;
+}
+
+.tour .media .video .videoButton:hover{
+    background: rgba(255, 255, 255, 0.6);
+}
+
