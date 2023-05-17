@@ -71,6 +71,7 @@
 }
 
 .tour .infos .detail h6{
+    margin: 16px 0px;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -107,6 +108,8 @@
     justify-content: flex-start;
     align-items: center;
     gap: 24px;
+    margin-top: 66px;
+    max-width: 440px;
 }
 
 .tour .infos .contact .contactPic{
@@ -122,4 +125,51 @@
 
 .tour .infos .contact .contactText p{
     margin: 0px;
+}
+
+.tour .infos .contact .contactText .name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0E1735;
+}
+
+.tour .infos .contact .contactText .job{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888B97;
+}
+
+.tour .infos .contact .contactButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 16px;
+
+    background: #10B981;
+    border-radius: 32px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+
+    margin-left: auto;
+}
+
+.tour .infos .contact .contactButton:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.tour .infos .contact .contactButton:hover {
+    background: #08c888;
 }
