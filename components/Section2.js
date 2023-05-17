@@ -29,10 +29,12 @@ export default function Section2(){
     const makeActive = (type) => {
         setSectionNavs(prev => {
             return prev.map(item => {
-                return item.type === type ? {...item, active:true} : {...item, active:false}
+                return item.type === type ? {...item, active:!item.active} : {...item, active:false}
             })
         })
     }
+
+    // let houseInfoFiltered = houseInfo.filter()
 
     const scroll = (node, left) => {
         return node.scrollTo({ left, behavior: 'smooth' });

@@ -1,0 +1,125 @@
+.tour{
+    margin: 120px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 148px;
+}
+
+.tour .left{
+    max-width: 550px;
+}
+
+.title{
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.divider{
+    width: 32px;
+    height: 1px;
+    background: #F59E0B;
+    margin-top: 9px;
+}
+
+.title .smallTitleText{
+    margin: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #F59E0B;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+}
+
+
+.title .largeTitle{
+    margin: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #1B1C57;
+}
+
+.tour .infos{
+    padding-left: 40px;
+}
+
+.tour .infos .description{
+    margin: 16px 0px;
+    width: 413px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #626687;
+    opacity: 0.75;
+}
+
+.tour .infos .detail{
+
+}
+
+.tour .infos .detail h6{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1B1C57;
+    opacity: 0.75;
+}
+
+.tour .infos .detail .details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.tour .infos .detail .details .d1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #888B97;
+}
+
+.tour .infos .detail .details .d1 p{
+    color: #3C4563;
+}
+
+.tour .infos .contact{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+.tour .infos .contact .contactPic{
+    border-radius: 50%;
+}
+
+.tour .infos .contact .contactText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.tour .infos .contact .contactText p{
+    margin: 0px;
+}

@@ -106,3 +106,12 @@ export const sectionTwoNavs = [
     link:'#'
   }
 ]
+
+export const houseDetail = [
+  {
+    bedrooms:4,
+    bathrooms: 2,
+    carport: 2,
+    floors: 2
+  },
+]
