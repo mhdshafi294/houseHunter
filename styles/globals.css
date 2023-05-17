@@ -20,7 +20,6 @@ body {
     height: 1px;
     background: #F59E0B;
     margin: 8px auto;
-    margin-top: 500px; /*to be deleted*/
 }
 
 .section-title-small{    
@@ -144,6 +143,11 @@ li{
     color: #F0F3FD;
 }
 
+.nav .navs li:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .nav .navs li span{
     transform: rotate(90deg);
     font-size: 2.3rem;
@@ -164,6 +168,11 @@ li{
     font-size: 14px;
     line-height: 22px;
     color: #047857;
+}
+
+.nav .signUp li:hover{
+    background: #047857;
+    color: #D1FAE5;
 }
 /*NavBar end*/
 
@@ -255,6 +264,10 @@ li{
     line-height: 22px;
     text-align:center;
     color: #FFFFFF;
+}
+
+.hero .left .content .searchBar .btn:hover{
+    background: #0bc386;
 }
 
 .hero .left .content .searchBar .btn span{
@@ -350,6 +363,10 @@ li{
 /*Hero end*/
 
 /*Review start*/
+.reviews{
+    margin: 120px 0px;
+}
+
 .ReviewCards{
     margin: 25px 0px;
     display: flex;
@@ -369,7 +386,9 @@ li{
     align-items: center;
     gap: 16px;
     margin-bottom: 50px;
+    cursor: pointer;
 }
+
 
 .indicators .indicator-buttons{
     all: unset;
@@ -377,10 +396,18 @@ li{
     height: 12px;
     background: #E0E3EB;
     border-radius: 50%;
-    transition: background 0.5s;
+    transition: background 0.3s;
+}
+
+.indicators .indicator-buttons:hover{
+    background: #aeafb2;
 }
 
 .indicators .indicator-symbol-active{
+    background: #3C4563;
+}
+
+.indicators .indicator-symbol-active:hover{
     background: #3C4563;
 }
 /*Review end*/

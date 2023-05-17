@@ -114,4 +114,6 @@ export const houseDetail = [
     carport: 2,
     floors: 2
   },
-]
+];
+
+export const tipsInfo = [];

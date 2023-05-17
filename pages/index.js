@@ -6,6 +6,7 @@ import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
 import Section2 from '@/components/Section2'
 import Tour from '@/components/Tour'
+import Tips from '@/components/Tips'
 import { Lexend } from '@next/font/google';
 
 // If loading a variable font, you don't need to specify the font weight
@@ -27,6 +28,7 @@ export default function Home() {
         <Section2 />
         <Tour />
         <Reviews />
+        <Tips />
       </main>
     </>
   )
