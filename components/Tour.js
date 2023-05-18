@@ -60,6 +60,7 @@ export default function Tour(){
                             </div>
                         </div>
                     </div>
+                    <div className={styles.greyDivider}></div>
                     <div className={styles.contact}>
                         <Image src='/../public/imgs/ellipse6.png' className={styles.contactPic} width='56' height='56'/>
                         <div className={styles.contactText}>

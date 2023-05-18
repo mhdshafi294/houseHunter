@@ -45,7 +45,9 @@
 }
 
 .tip .right .durationAndDate{
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .tip .right .durationAndDate .duration{
