@@ -116,4 +116,41 @@ export const houseDetail = [
   },
 ];
 
-export const tipsInfo = [];
+export const tipsInfo = [
+  {
+    authorName: 'Dianne Russell',
+    authorImage: '/../public/imgs/ellipse6.png',
+    title: 'The things we need to check when we want to buy a house',
+    image: '/../public/imgs/Rectangle22_0.png',
+    publishDate: "25 Apr 2021",
+    readDuration: 4,
+    shortDescription:"Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+  },
+  {
+    authorName: 'Dianne Russell',
+    authorImage: '/../public/imgs/ellipse6.png',
+    title: 'The things we need to check when we want to buy a house',
+    image: '/../public/imgs/Rectangle22_1.png',
+    publishDate: "25 Apr 2021",
+    readDuration: 4,
+    shortDescription:"Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+  },
+  {
+    authorName: 'Dianne Russell',
+    authorImage: '/../public/imgs/ellipse6.png',
+    title: 'The things we need to check when we want to buy a house',
+    image: '/../public/imgs/Rectangle22_2.png',
+    publishDate: "25 Apr 2021",
+    readDuration: 4,
+    shortDescription:"Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+  },
+  {
+    authorName: 'Dianne Russell',
+    authorImage: '/../public/imgs/ellipse6.png',
+    title: 'The things we need to check when we want to buy a house',
+    image: '/../public/imgs/Rectangle23.png',
+    publishDate: "25 Apr 2021",
+    readDuration: 4,
+    shortDescription:"Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+  },
+];

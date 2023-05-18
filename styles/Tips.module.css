@@ -1,0 +1,17 @@
+.tips{
+    margin: 120px;
+}
+
+.tips .moreArticales{
+    display: block;
+    margin: 24px auto;
+    padding: 12px 16px;
+    left: 661px;
+    top: 3128px;
+    background: #10B981;
+    border-radius: 32px;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 22px;
+}

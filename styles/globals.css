@@ -43,6 +43,10 @@ body {
     color: #1B1C57;
     margin: 8px auto;
 }
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0px;
+}
 /*Global end*/
 
 /*NavBar start*/
