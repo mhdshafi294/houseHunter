@@ -12,6 +12,7 @@
 
 .tip .imgDiv img{
     border-radius: 16px;
+    object-fit: cover;
 }
 
 .tip .right{
@@ -19,6 +20,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    width: 340px;
 }
 
 .tip .right .author{
@@ -45,15 +47,19 @@
 }
 
 .tip .right .durationAndDate{
+    width: 340px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #888B97;
 }
 
-.tip .right .durationAndDate .duration{
-
-}
-
-.tip .right .durationAndDate .date{
-
+.tip .right .durationAndDate .clock{
+    display: block;
+    font-size: 24px;
+    margin-right: 12px;
 }

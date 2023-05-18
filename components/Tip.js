@@ -1,6 +1,7 @@
 
 import Image from 'next/image'
 import styles from '../styles/Tip.module.css'
+import { AiFillClockCircle } from 'react-icons/ai';
 
 export default function Tip({tipInfos}){
     return(
@@ -15,9 +16,8 @@ export default function Tip({tipInfos}){
                 </div>
                 <h5 className={styles.title}>{tipInfos.title}</h5>
                 <div className={styles.durationAndDate}>
-                    <span className={styles.clock}></span>
-                    <p className={styles.duration}>{tipInfos.readDuration} min read | </p>
-                    <p className={styles.date}>{tipInfos.publishDate}</p>
+                    <p className={styles.clock}> <AiFillClockCircle /></p>
+                    <p>{`${tipInfos.readDuration} min read |  ${tipInfos.publishDate}`}</p>
                 </div>
             </div>
         </div>
