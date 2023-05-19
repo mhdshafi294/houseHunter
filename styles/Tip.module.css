@@ -4,6 +4,11 @@
     justify-content:flex-start;
     align-items: stretch;
     gap: 32px;
+    transition: 0.3s;
+}
+
+.tip:hover{
+    transform: scale(1.1);
 }
 
 .tip .imgDiv{
@@ -50,7 +55,7 @@
     width: 340px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
