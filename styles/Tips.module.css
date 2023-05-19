@@ -17,10 +17,83 @@
     line-height: 22px;
 }
 
+.tips .tipsContent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 68px;
+}
+
 .tips .smallTips{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
+}
+
+.largeTip{
+    width: 572px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: stretch;
+    gap: 32px;
+}
+
+.largeTip .imgDiv{
+    border-radius: 16px;
+}
+
+.largeTip .imgDiv img{
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.largeTip .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 340px;
+}
+
+.largeTip .right .author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.largeTip .right .author img{
+    border-radius: 50%;
+    filter: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
+}
+
+.largeTip .right .author .authorName{
+    font-size: 14px;
+    color: #3C4563;
+}
+
+.largeTip .right .title{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #1B1C57;
+}
+
+.largeTip .right .durationAndDate{
+    width: 340px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #888B97;
+}
+
+.largeTip .right .durationAndDate .clock{
+    display: block;
+    font-size: 24px;
+    margin-right: 12px;
 }
