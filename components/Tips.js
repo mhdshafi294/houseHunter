@@ -21,21 +21,19 @@ export default function Tips(){
                     ))}
                 </div>
                 <div className={styles.largeTip}>
-                    <div className={styles.tip}>
-                        <div className={styles.imgDiv}>
-                            <Image className={styles.img} src={tipsInfo[tipsInfo.length - 1].image} width="200" height="144"/>
+                    <div className={styles.imgDiv}>
+                        <Image className={styles.img} src={tipsInfo[tipsInfo.length - 1].image} width="560" height="280"/>
+                    </div>
+                    <div className={styles.text}>
+                        <div className={styles.author}>
+                            <Image className={styles.authorImg} src={tipsInfo[tipsInfo.length - 1].authorImage} width="32" height="32"/>
+                            <p className={styles.authorName}>{tipsInfo[tipsInfo.length - 1].authorName}</p>
                         </div>
-                        <div className={styles.right}>
-                            <div className={styles.author}>
-                                <Image className={styles.authorImg} src={tipsInfo[tipsInfo.length - 1].authorImage} width="32" height="32"/>
-                                <p className={styles.authorName}>{tipsInfo[tipsInfo.length - 1].authorName}</p>
-                            </div>
-                            <h5 className={styles.title}>{tipsInfo[tipsInfo.length - 1].title}</h5>
-                            <p className={styles.description}>{tipsInfo[tipsInfo.length - 1].title}</p>
-                            <div className={styles.durationAndDate}>
-                                <p className={styles.clock}> <AiFillClockCircle /></p>
-                                <p>{`${tipsInfo[tipsInfo.length - 1].readDuration} min read |  ${tipsInfo[tipsInfo.length - 1].publishDate}`}</p>
-                            </div>
+                        <h5 className={styles.title}>{tipsInfo[tipsInfo.length - 1].title}</h5>
+                        <p className={styles.description}>{tipsInfo[tipsInfo.length - 1].shortDescription}</p>
+                        <div className={styles.durationAndDate}>
+                            <p className={styles.clock}> <AiFillClockCircle /></p>
+                            <p>{`${tipsInfo[tipsInfo.length - 1].readDuration} min read |  ${tipsInfo[tipsInfo.length - 1].publishDate}`}</p>
                         </div>
                     </div>
                 </div>
