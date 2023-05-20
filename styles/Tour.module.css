@@ -1,5 +1,6 @@
 .tour{
-    margin: 120px;
+    margin: 120px auto;
+    width: 1200px;
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
