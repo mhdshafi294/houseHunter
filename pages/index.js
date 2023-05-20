@@ -7,6 +7,7 @@ import Hero from '@/components/Hero'
 import Section2 from '@/components/Section2'
 import Tour from '@/components/Tour'
 import Tips from '@/components/Tips'
+import Subscribe from '@/components/Subscribe'
 import { Lexend } from '@next/font/google';
 
 // If loading a variable font, you don't need to specify the font weight
@@ -29,6 +30,7 @@ export default function Home() {
         <Tour />
         <Reviews />
         <Tips />
+        <Subscribe />
       </main>
     </>
   )

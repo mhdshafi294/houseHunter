@@ -25,6 +25,11 @@
     position: relative;
     top: -150px;
     width: 612px;
+    transition: 0.3s;
+}
+
+.reviewContent:hover{
+    transform: scale(1.025) translateY(-15px);
 }
 
 .reviewTitle{

@@ -1,0 +1,150 @@
+.subscribe{
+    margin: 120px auto;
+    width: 83%;
+    width: 1200px;
+    height: 312px;
+    position: relative;
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(139,181,250,1) 5%, rgba(255,255,255,0) 65%, rgba(255,255,255,0) 68%, rgba(139,181,250,0.8995973389355743) 100%);
+}
+
+.subscribe .subscribeTextContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.subscribe .subscribeTextContainer .subscribeTitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1B1C57;
+}
+
+.subscribe .subscribeTextContainer .subscribeBar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 4px 4px 4px 24px;
+    width: 496px;
+    height: 54px;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
+    border-radius: 32px;
+}
+
+.subscribe .subscribeTextContainer .subscribeBar .icon{
+    font-size: 24px;
+    color: #3B82F6;
+    transition: 0.5s;
+}
+
+.subscribe .subscribeTextContainer .subscribeBar .icon:hover{
+    transform: scale(1.1);
+}
+
+.subscribe .subscribeTextContainer .subscribeBar input{
+    all: unset;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #888B97;
+    border: none;
+}
+
+
+.subscribe .subscribeTextContainer .subscribeBar .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    width: 129px;
+    height: 46px;
+    background: #10B981;
+    border-radius: 32px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.subscribe .subscribeTextContainer .subscribeBar .btn:hover{
+    background: #0acd8c;
+}
+
+.subscribe img{
+    object-fit: cover;
+    border: 2px solid #FFFFFF;
+}
+
+.subscribe .img1{
+    border-radius: 24px;
+    position: absolute;
+    left: 44px;
+    top: 38px;
+}
+
+.subscribe .img2, .img3, .img6, .img7{
+    border-radius: 50%;
+}
+
+.subscribe .img2{
+    position: absolute;
+    left: 67px;
+    top: 173px;
+}
+
+.subscribe .img3{
+    position: absolute;
+    left: 204px;
+    top: 71px;
+}
+
+.subscribe .img4{
+    border-radius: 24px;
+    position: absolute;
+    left: 195px;
+    top: 178px;
+}
+
+.subscribe .img5{
+    border-radius: 24px;
+    position: absolute;
+    right: 200px;
+    top: 44px;
+}
+
+.subscribe .img6{
+    position: absolute;
+    right: 200px;
+    top: 143px;
+}
+
+.subscribe .img7{
+    position: absolute;
+    right: 82px;
+    top: 107px;
+}
+
+.subscribe .img8{
+    border-radius: 24px;
+    position: absolute;
+    right: 73px;
+    top: 197px;
+}
