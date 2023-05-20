@@ -4,7 +4,7 @@ import { global } from 'styled-jsx/css'
 import Reviews from '@/components/Reviews'
 import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
-import Section2 from '@/components/Section2'
+import Property from '@/components/Property'
 import Tour from '@/components/Tour'
 import Tips from '@/components/Tips'
 import Subscribe from '@/components/Subscribe'
@@ -27,7 +27,7 @@ export default function Home() {
       <main className={lexend.className}>
         <NavBar />
         <Hero />
-        <Section2 />
+        <Property />
         <Tour />
         <Reviews />
         <Tips />

@@ -1,4 +1,88 @@
 .footer{
     margin: 120px auto;
     width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .hounter{
+    width: 320px;
+}
+
+.footer .hounter .hounterText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626687;
+    opacity: 0.75;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.footer .hounter .social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    color: #3C4563;
+    font-size: 24px;
+}
+
+.footer .hounter .social .facebook:hover{
+    color: #4267B2;
+}
+
+.footer .hounter .social .twitter:hover{
+    color: #1DA1F2;
+}
+
+.footer .hounter .social .instagram:hover{
+    color: #cc2366;
+}
+
+/* .footer .hounter .social .instagram:hover{
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.footer .other{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 85px;
+}
+
+.footer .other div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+.footer .other div h6{
+    margin: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #0E1735;
+}
+
+.footer .other div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #888B97;
 }
