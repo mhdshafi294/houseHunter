@@ -98,6 +98,10 @@
     position: absolute;
     left: 44px;
     top: 38px;
+    animation-name: floating1;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .subscribe .img2, .img3, .img6, .img7{
@@ -108,12 +112,17 @@
     position: absolute;
     left: 67px;
     top: 173px;
+    animation-name: floating2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .subscribe .img3{
     position: absolute;
     left: 204px;
     top: 71px;
+    animation: floating1 8s ease-in-out infinite;
 }
 
 .subscribe .img4{
@@ -121,6 +130,7 @@
     position: absolute;
     left: 195px;
     top: 178px;
+    animation: floating1 8s ease-in-out infinite;
 }
 
 .subscribe .img5{
@@ -128,18 +138,21 @@
     position: absolute;
     right: 200px;
     top: 44px;
+    animation: floating1 9s ease-in-out infinite;
 }
 
 .subscribe .img6{
     position: absolute;
     right: 200px;
-    top: 143px;
+    top: 200px;
+    animation: floating1 7s ease-in-out infinite;
 }
 
 .subscribe .img7{
     position: absolute;
     right: 82px;
-    top: 107px;
+    top: 90px;
+    animation: floating2 6s ease-in-out infinite;
 }
 
 .subscribe .img8{
@@ -147,4 +160,18 @@
     position: absolute;
     right: 73px;
     top: 197px;
+    animation: floating1 8s ease-in-out infinite;
 }
+
+@keyframes floating1 { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 15px); } 
+    100%   { transform: translate(0, -0px); }     
+} 
+
+@keyframes floating2 { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 30px); } 
+    100%   { transform: translate(0, -0px); }     
+}
+

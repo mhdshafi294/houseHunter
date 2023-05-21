@@ -86,3 +86,7 @@
     text-transform: capitalize;
     color: #888B97;
 }
+
+.footer .other div ul li:hover{
+    color: #21273a;
+}
