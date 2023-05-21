@@ -37,14 +37,14 @@ export default function HouseCard({house}){
     return(
         <div className={styles.houseCard}>
             <div className={styles.badge} style={badgeStyles}>
-                <Image src={badgeImage} className={styles.badgeImage} width='16' height='16'/>
+                <Image src={badgeImage} className={styles.badgeImage} width='16' height='16' alt="Picture of the badge"/>
                 {house.badge}
             </div>
-            <Image src={house.image} className={styles.houseImage} width='340' height='382'/>
+            <Image src={house.image} className={styles.houseImage} width='340' height='382' alt="Picture of the property"/>
             <p className={styles.name}>{house.name}</p>
             <p className={styles.price}>$ {house.price}</p>
             <div className={styles.owner}>
-                <Image src={house.ownerImage} className={styles.ownerImage} width='40' height='40'/>
+                <Image src={house.ownerImage} className={styles.ownerImage} width='40' height='40' alt="Picture of the owner"/>
                 <div className={styles.nameAndLocation}>
                     <p className={styles.ownerName}>{house.ownerName}</p>
                     <p className={styles.location}>{house.location}</p>

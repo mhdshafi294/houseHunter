@@ -15,11 +15,11 @@ export default function Property(){
     let houseInfoFiltered = filterProperties(houseInfo, sectionNavs)
 
     function filterProperties(properties, sectionNavs){
-        let filteredProperties = [];
         let sectionNavsFiltered = sectionNavs.filter(nav => nav.active);
         let sectionNavsFilters = sectionNavsFiltered.map(nav => nav.type);
-        console.log(sectionNavsFilters)
-        // properties.filter(property => )
+        let filteredProperties = properties.filter(property => sectionNavsFilters.includes(property.type))
+        filteredProperties = filteredProperties.length ? filteredProperties : properties;
+        return filteredProperties;
     }
 
     const navs = sectionNavs.map(item => (
@@ -103,7 +103,7 @@ export default function Property(){
             </div>
             <div className={styles.scrollContainer} ref={carouselRef} onScroll={handleScroll}>
                 <div className={styles.houseCards}>
-                    {houseInfo.map((house, index) => {
+                    {houseInfoFiltered.map((house, index) => {
                         return (
                             <HouseCard
                                 key={index}
