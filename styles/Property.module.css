@@ -62,7 +62,7 @@
     height: 52px;
 }
 
-.navs li{
+.navs button{
     padding: 12px 24px;
     gap: 8px;
     height: 52px;
@@ -78,7 +78,7 @@
     color: #888B97;
 }
 
-.navs li:hover{
+.navs button:hover{
     border: 1px solid #e0e3eb;
     color: #64666e;
     background-color: #e8e8e8;

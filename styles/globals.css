@@ -179,11 +179,12 @@ li{
     font-size: 14px;
     line-height: 22px;
     color: #047857;
+    transition: 0.2s;
 }
 
 .nav .signUp li:hover{
-    background: #047857;
-    color: #D1FAE5;
+    background: #10B981;
+    color: #ffffff;
 }
 /*NavBar end*/
 

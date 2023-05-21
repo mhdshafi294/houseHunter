@@ -113,7 +113,7 @@
     left: 67px;
     top: 173px;
     animation-name: floating2;
-    animation-duration: 8s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }

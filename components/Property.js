@@ -2,39 +2,48 @@ import {useState, useEffect, useRef} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import HouseCard from './HouseCard'
-import styles from '../styles/Section2.module.css'
+import styles from '../styles/Property.module.css'
 import { BsFillHouseDoorFill } from 'react-icons/bs';
 import { MdVilla, MdApartment } from 'react-icons/md';
-import { houseInfo, sectionTwoNavs } from '../constants/constants.js'
+import { houseInfo, propertyNavs } from '../constants/constants.js'
 
 export default function Property(){
     const [scrolling, setScrolling] = useState(0);
-    const [sectionNavs, setSectionNavs] = useState(sectionTwoNavs);
+    const [sectionNavs, setSectionNavs] = useState(propertyNavs);
     const carouselRef = useRef();
 
+    let houseInfoFiltered = filterProperties(houseInfo, sectionNavs)
+
+    function filterProperties(properties, sectionNavs){
+        let filteredProperties = [];
+        let sectionNavsFiltered = sectionNavs.filter(nav => nav.active);
+        let sectionNavsFilters = sectionNavsFiltered.map(nav => nav.type);
+        console.log(sectionNavsFilters)
+        // properties.filter(property => )
+    }
+
     const navs = sectionNavs.map(item => (
-        <Link key={item.type} href={item.link}>
-            <li 
+        <button key={item.type}
                 className={item.active? styles.acvtiveNav : ''} 
                 onClick={() => makeActive(item.type)}
+        >
+            <li 
                 >
                     {item.type === 'House' && <BsFillHouseDoorFill />}
                     {item.type === 'Villa' && <MdVilla />}
                     {item.type === 'Apartment' && <MdApartment />}
                     {item.type}
             </li>
-        </Link>
+        </button>
     ))
 
     const makeActive = (type) => {
         setSectionNavs(prev => {
             return prev.map(item => {
-                return item.type === type ? {...item, active:!item.active} : {...item, active:false}
+                return item.type === type ? {...item, active:!item.active} : {...item}
             })
         })
     }
-
-    // let houseInfoFiltered = houseInfo.filter()
 
     const scroll = (node, left) => {
         return node.scrollTo({ left, behavior: 'smooth' });
