@@ -179,8 +179,7 @@ li{
 
 .nav .navs .menu{
     position: absolute;
-    width: 14%;
-    left: 74%;
+    right: 140px;
     top: calc(100% + -50px);
     padding: 30px;
     background: rgba(255, 255, 255, 0.1);
