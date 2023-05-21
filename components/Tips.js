@@ -10,7 +10,7 @@ export default function Tips(){
             <div className='divider'></div>
             <p className='section-title-small'>See tips and trick from our partnership</p>
             <h2 className='section-title-large'>Find out more about <br /> selling and buying homes</h2>
-            <button className={styles.moreArticales}>More Artikel</button>
+            <button className={styles.moreArticales}>More Articles</button>
             <div className={styles.tipsContent}>
                 <div className={styles.smallTips}>
                     {tipsInfo.slice(0, 3).map((tip, index) => (

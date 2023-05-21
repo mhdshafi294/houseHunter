@@ -216,9 +216,9 @@ li{
 }
 
 .nav .navs .menu .propertyMenu li{
-    background: #b8b8b8e9;
-    border: 1px solid #a2a4a9cf;
-    color: #55565cda
+    background: #b8b8b888;
+    border: 1px solid #a2a4a99f;
+    color: #55565cab
 }
 
 .nav .navs .menu .propertyMenu li:hover{
@@ -442,6 +442,7 @@ li{
 
 .ReviewCards{
     margin: 25px 0px;
+    height: 550px;
     display: flex;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
