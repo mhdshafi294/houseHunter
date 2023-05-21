@@ -4,6 +4,12 @@ import Image from 'next/image';
 
 export default function Reviews(){
     const [signedIn, setSignedIn] = useState(false);
+    const [isClassActive, setIsClassActive] = useState(false);
+
+    // Function to toggle class
+    const toggleClass = () => {
+        setIsClassActive(prev => !prev)
+    }
 
     return(
         <div className='navBar'>
@@ -18,7 +24,14 @@ export default function Reviews(){
                 <div className='navs'>
                     <Link  href='/about'><li>About</li></Link>
                     <Link  href='/article'><li>Article</li></Link>
-                    <Link  href='/property'><li>Property <span>&#8250;</span> </li></Link>
+                    <button className={isClassActive ? 'active' : ''} onClick={toggleClass}><li>Property <span>&#8250;</span> </li></button>
+                    <div className={`${isClassActive ? "menu active" : "menu"}`}>
+                        <ul className='propertyMenu'>
+                            <Link  href='/house'><li>House</li></Link>
+                            <Link  href='/villa'><li>Villa</li></Link>
+                            <Link  href='/apartment'><li >Apartment</li></Link>
+                        </ul>
+                    </div>
                 </div>
                 {!signedIn && <Link href='/signUp' className='signUp'><li>Sign Up!</li></Link>}
             </ul>

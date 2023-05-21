@@ -154,9 +154,15 @@ li{
     color: #F0F3FD;
 }
 
+
 .nav .navs li:hover{
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav .navs button{
+    all: unset;
+    cursor: pointer;
 }
 
 .nav .navs li span{
@@ -164,6 +170,62 @@ li{
     font-size: 2.3rem;
     font-weight: 250;
     margin-left: 10px;
+    transition: 0.3s;
+}
+
+.nav .navs .active li span{
+    transform: rotate(-90deg) translateY(-50%);
+}
+
+.nav .navs .menu{
+    position: absolute;
+    width: 14%;
+    left: 74%;
+    top: calc(100% + -50px);
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 32px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #F0F3FD;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav .navs .menu.active{
+    opacity: 1;
+    z-index: 100;
+    top: calc(100% + 1px);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.nav .navs .menu .propertyMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav .navs .menu .propertyMenu li{
+    background: #b8b8b8e9;
+    border: 1px solid #a2a4a9cf;
+    color: #55565cda
+}
+
+.nav .navs .menu .propertyMenu li:hover{
+    background: #9d9d9d;
+    border: 1px solid #b5b6b9;
+    color: #45464a
 }
 
 .nav .signUp li{
