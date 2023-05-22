@@ -1,7 +1,7 @@
 
 import Image from 'next/image'
 import styles from '../styles/Tour.module.css'
-import YouTube from "react-youtube";
+import YouTube, { YouTubeProps } from 'react-youtube';
 import { MdKingBed, MdBathtub, MdGarage } from 'react-icons/md';
 import { GiStairs } from 'react-icons/gi';
 import { BsTelephoneFill,BsPlayFill } from 'react-icons/bs';
@@ -9,13 +9,19 @@ import { houseDetail } from '../constants/constants.js'
 
 export default function Tour(){
     // This const is for YouTube component.
-    const opts = {
-        height: "488",
-        width: "416",
-        playerVars: {
-        autoplay: 1,
-        },
-    };
+    // const onPlayerReady = YouTubeProps['onReady'] = (event) => {
+    //     // access to player in all event handlers via event.target
+    //     event.target.pauseVideo();
+    // }
+    
+    // const opts = YouTubeProps['opts'] = {
+    //     height: '416',
+    //     width: '488',
+    //     playerVars: {
+    //     // https://developers.google.com/youtube/player_parameters
+    //     autoplay: 0,
+    //     },
+    // };
     
     return(
         <section className={styles.tour}>
@@ -79,6 +85,7 @@ export default function Tour(){
                     {/* <YouTube videoId="2g811Eo7K8U" opts={opts} /> */}
                 </div>
                 <div className={styles.video}>
+                    {/* <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={onPlayerReady} /> */}
                     <Image src='/../public/imgs/Rectangle17.jpg' className={styles.contactPic} width='488' height='416'/>
                     <button className={styles.videoButton}><BsPlayFill /></button>
                 </div>

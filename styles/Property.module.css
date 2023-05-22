@@ -64,7 +64,6 @@
 
 .navs button{
     padding: 12px 24px;
-    gap: 8px;
     height: 52px;
     border: 1px solid #E0E3EB;
     border-radius: 32px;
@@ -76,6 +75,13 @@
     font-size: 18px;
     line-height: 28px;
     color: #888B97;
+}
+
+.navs button li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .navs button:hover{
@@ -135,7 +141,7 @@
 }
 
 .section2 .scrollContainer{
-    padding-left: 120px;
+    padding-left: 160px;
     overflow:auto;
 }
 .section2 .scrollContainer::-webkit-scrollbar {
@@ -143,6 +149,8 @@
 }
 .section2 .houseCards{
     margin-top: 40px;
+
     display: flex;
     justify-content: flex-start;
+    width: fit-content;
 }

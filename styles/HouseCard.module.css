@@ -31,6 +31,7 @@
     font-size: 24px;
     line-height: 32px;
     color: #0E1735;
+    margin-top: 24px;
 }
 
 .houseCard .price{
@@ -39,6 +40,7 @@
     font-size: 20px;
     line-height: 32px;
     color: #3C4563;
+    margin-top: 8px;
 }
 
 .houseCard .owner{
@@ -46,6 +48,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 16px;
+    margin-top: 24px;
 }
 
 .houseCard .owner .ownerImage{
