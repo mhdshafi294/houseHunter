@@ -11,6 +11,11 @@ export default function Reviews(){
         setIsClassActive(prev => !prev)
     }
 
+    const handleSign = (e) => {
+        e.preventDefault();
+        setSignedIn(prev => !prev)
+    }
+
     return(
         <div className='navBar'>
             <div className='logo'>
@@ -33,7 +38,8 @@ export default function Reviews(){
                         </ul>
                     </div>
                 </div>
-                {!signedIn && <Link href='/signUp' className='signUp'><li>Sign Up!</li></Link>}
+                {!signedIn && <Link href='/signUp' className='signUp' onClick={(e)=>handleSign(e)}><li>Sign Up!</li></Link>}
+                {signedIn && <Link href='/signOut' className='signOut' onClick={(e)=>handleSign(e)}><li>Sign Out!</li></Link>}
             </ul>
         </div>
     )

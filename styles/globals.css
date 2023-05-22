@@ -245,6 +245,27 @@ li{
     background: #10B981;
     color: #ffffff;
 }
+
+.nav .signOut li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 46px;
+    background: #fad1d1;
+    border-radius: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #780404;
+    transition: 0.2s;
+}
+
+.nav .signOut li:hover{
+    background: #b91010;
+    color: #ffffff;
+}
 /*NavBar end*/
 
 /*Hero start*/
