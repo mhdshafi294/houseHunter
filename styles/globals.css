@@ -56,11 +56,9 @@ h1, h2, h3, h4, h5, h6, p{
     position: absolute;
     top: 46px;
     height: 46px;
-    width: 100%;
-    max-width: 1200px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    margin: 1px auto;
+    width: 83%;
+    max-width: 100%;
+    margin: 1px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -295,11 +293,12 @@ li{
     line-height: 28px;
     color: #626687;
     opacity: 0.75;
+    margin-top: 24px;
 }
 
 .hero .left .content .searchBar{
     position: relative;
-    margin-top: 16px;
+    margin-top: 32px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -357,6 +356,7 @@ li{
     font-size: 16px;
     line-height: 32px;
     color: #888B97;
+    margin-top: 32px;
 }
 
 .hero .left .content .partners{
@@ -364,6 +364,7 @@ li{
     justify-content: flex-start;
     align-items: center;
     gap: 32px;
+    margin-top: 26px;
 }
 
 .hero .right{
