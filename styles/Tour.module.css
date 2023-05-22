@@ -226,9 +226,19 @@
     transition: 0.3s;
 }
 
+.tour .media .video iframe{
+    transition: 0.3s;
+}
+
 .tour .media .video:hover{
     z-index: 2;
-    transform: scale(1.1) translateX(-25px);
+    width: 813px;
+    height:457px;
+}
+
+.tour .media .video:hover iframe{
+    width: 813px;
+    height:457px;
 }
 
 .tour .media .video .videoButton{

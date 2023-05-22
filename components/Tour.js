@@ -1,6 +1,7 @@
 
 import Image from 'next/image'
 import styles from '../styles/Tour.module.css'
+import {useRef} from 'react'
 import YouTube, { YouTubeProps } from 'react-youtube';
 import { MdKingBed, MdBathtub, MdGarage } from 'react-icons/md';
 import { GiStairs } from 'react-icons/gi';
@@ -8,7 +9,16 @@ import { BsTelephoneFill,BsPlayFill } from 'react-icons/bs';
 import { houseDetail } from '../constants/constants.js'
 
 export default function Tour(){
-    // This const is for YouTube component.
+    // const youtubeContsinerRef = useRef();
+    // const youtubeModuleRef = useRef();
+
+    // const handleOnPlay = () => {
+    //     youtubeContsinerRef.current.style.zIndex = "2";
+    //     youtubeContsinerRef.current.style.transform = "translateX(-10px)";
+    //     youtubeContsinerRef.current.style.width = "740px";
+    //     youtubeModuleRef.current.setAttribute("opts", "{height: '739', width: '488', playerVars: {autoplay: 0,}") ;
+    // }
+    // // This const is for YouTube component.
     // const onPlayerReady = YouTubeProps['onReady'] = (event) => {
     //     // access to player in all event handlers via event.target
     //     event.target.pauseVideo();
@@ -84,10 +94,22 @@ export default function Tour(){
                     <Image src='/../public/imgs/Rectangle20.jpg' className={styles.contactPic} width='96' height='80'/>
                     {/* <YouTube videoId="2g811Eo7K8U" opts={opts} /> */}
                 </div>
-                <div className={styles.video}>
-                    {/* <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={onPlayerReady} /> */}
-                    <Image src='/../public/imgs/Rectangle17.jpg' className={styles.contactPic} width='488' height='416'/>
-                    <button className={styles.videoButton}><BsPlayFill /></button>
+                <div className={styles.video} >
+                    <YouTube 
+                        videoId="zumJJUL_ruM" 
+                        opts={{
+                                height: '416',
+                                width: '488',
+                                playerVars: {
+                                autoplay: 0,
+                                },
+                            }} 
+                        onReady={(event) => { event.target.pauseVideo(); }}
+                        // onPlay={handleOnPlay}
+                        // ref={youtubeModuleRef}
+                    />
+                    {/* <Image src='/../public/imgs/Rectangle17.jpg' className={styles.contactPic} width='488' height='416'/>
+                    <button className={styles.videoButton}><BsPlayFill /></button> */}
                 </div>
             </div>
         </section>
