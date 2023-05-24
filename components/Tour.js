@@ -9,30 +9,6 @@ import { BsTelephoneFill,BsPlayFill } from 'react-icons/bs';
 import { houseDetail } from '../constants/constants.js'
 
 export default function Tour(){
-    // const youtubeContsinerRef = useRef();
-    // const youtubeModuleRef = useRef();
-
-    // const handleOnPlay = () => {
-    //     youtubeContsinerRef.current.style.zIndex = "2";
-    //     youtubeContsinerRef.current.style.transform = "translateX(-10px)";
-    //     youtubeContsinerRef.current.style.width = "740px";
-    //     youtubeModuleRef.current.setAttribute("opts", "{height: '739', width: '488', playerVars: {autoplay: 0,}") ;
-    // }
-    // // This const is for YouTube component.
-    // const onPlayerReady = YouTubeProps['onReady'] = (event) => {
-    //     // access to player in all event handlers via event.target
-    //     event.target.pauseVideo();
-    // }
-    
-    // const opts = YouTubeProps['opts'] = {
-    //     height: '416',
-    //     width: '488',
-    //     playerVars: {
-    //     // https://developers.google.com/youtube/player_parameters
-    //     autoplay: 0,
-    //     },
-    // };
-    
     return(
         <section className={styles.tour}>
             <div className={styles.left}>
@@ -92,7 +68,6 @@ export default function Tour(){
                     <Image src='/../public/imgs/Rectangle18.jpg' className={styles.contactPic} width='296' height='168'/>
                     <Image src='/../public/imgs/Rectangle19.jpg' className={styles.contactPic} width='96' height='80'/>
                     <Image src='/../public/imgs/Rectangle20.jpg' className={styles.contactPic} width='96' height='80'/>
-                    {/* <YouTube videoId="2g811Eo7K8U" opts={opts} /> */}
                 </div>
                 <div className={styles.video} >
                     <YouTube 
@@ -106,7 +81,6 @@ export default function Tour(){
                             }} 
                         onReady={(event) => { event.target.pauseVideo(); }}
                         // onPlay={handleOnPlay}
-                        // ref={youtubeModuleRef}
                     />
                     {/* <Image src='/../public/imgs/Rectangle17.jpg' className={styles.contactPic} width='488' height='416'/>
                     <button className={styles.videoButton}><BsPlayFill /></button> */}
