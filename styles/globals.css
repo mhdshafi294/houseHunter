@@ -48,6 +48,18 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 8px auto;
 }
 
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+ul{
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
 
 /*Global end*/
 
@@ -118,19 +130,6 @@ h1, h2, h3, h4, h5, h6, p{
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-}
-
-a{
-    all: unset;
-    cursor: pointer;
-}
-
-ul{
-    padding: 0px;
-}
-
-li{
-    list-style: none;
 }
 
 .nav .navs li{

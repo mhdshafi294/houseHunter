@@ -27,8 +27,7 @@ export default function Property(){
                 className={item.active? styles.acvtiveNav : ''} 
                 onClick={() => makeActive(item.type)}
         >
-            <li 
-                >
+            <li>
                     {item.type === 'House' && <BsFillHouseDoorFill />}
                     {item.type === 'Villa' && <MdVilla />}
                     {item.type === 'Apartment' && <MdApartment />}
