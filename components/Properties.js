@@ -7,7 +7,7 @@ import { BsFillHouseDoorFill } from 'react-icons/bs';
 import { MdVilla, MdApartment } from 'react-icons/md';
 import { houseInfo, propertyNavs } from '../constants/constants.js'
 
-export default function Property(){
+export default function Properties(){
     const [scrolling, setScrolling] = useState(0);
     const [sectionNavs, setSectionNavs] = useState(propertyNavs);
     const carouselRef = useRef();

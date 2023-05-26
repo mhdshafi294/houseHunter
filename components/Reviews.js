@@ -1,5 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import ReviewCard from './ReviewCard'
+import styles from '../styles/Reviews.module.css'
 import { reviews } from '../constants/constants.js'
 
 export default function Reviews(){
@@ -39,13 +40,13 @@ export default function Reviews(){
 
 
     return (
-        <div className='reviews'>
-            <div className='divider'></div>
+        <div className={styles.reviews}>
+            <div className="divider"></div>
             <p className='section-title-small'>See Our Review</p>
             <h2 className='section-title-large'>What Our User Say About Us</h2>
             <div 
                 ref={carouselRef} 
-                className='ReviewCards'
+                className={styles.ReviewCards}
                 onScroll={handleScroll} 
             >
                 {
@@ -63,15 +64,15 @@ export default function Reviews(){
                     />
                 ))}
             </div>
-            <div className="indicators">
+            <div className={styles.indicators}>
                 {reviews.map((item, index) => {
                     return (
                     <button
                         key={index}
-                        className={`indicator-buttons ${
+                        className={`${styles.indicatorButtons} ${
                             index === activeIndex
-                            ? "indicator-symbol-active"
-                            : "indicator-symbol"
+                            ? styles.indicatorSymbolActive
+                            : styles.indicatorSymbol
                         }`}
                         onClick={(e) => handleClick(e, index)}
                     >

@@ -1,0 +1,49 @@
+/*Review start*/
+.reviews{
+    margin: 120px 0px;
+}
+
+.ReviewCards{
+    margin: 25px 0px;
+    height: 550px;
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+}
+
+.ReviewCards::-webkit-scrollbar {
+    display: none;
+}
+
+.indicators{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.indicators .indicatorButtons{
+    all: unset;
+    width: 12px;
+    height: 12px;
+    background: #E0E3EB;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.indicators .indicatorButtons:hover{
+    background: #aeafb2;
+}
+
+.indicators .indicatorSymbolActive{
+    background: #3C4563;
+}
+
+.indicators .indicatorSymbolActive:hover{
+    background: #3C4563;
+}
+/*Review end*/
