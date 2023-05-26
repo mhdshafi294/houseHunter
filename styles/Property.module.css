@@ -75,6 +75,7 @@
     font-size: 18px;
     line-height: 28px;
     color: #888B97;
+    transition: 0.3s;
 }
 
 .navs button li{
@@ -98,6 +99,10 @@
 .navs .acvtiveNav:hover{
     background: #a9fbd1;
     color: #04bc7f;
+}
+
+.section2 .sectionHeader button:active {
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 .section2 .sectionHeader .buttons{
