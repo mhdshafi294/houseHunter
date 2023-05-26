@@ -51,7 +51,7 @@ export default function Property(){
     const moveRight = (e) => {
         e.preventDefault();
         if (carouselRef.current) {
-            const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * ((scrolling + 1) / houseInfo.length));
+            const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * ((scrolling + 1) / houseInfoFiltered.length));
             scroll(carouselRef.current, scrollLeft);
         }
     }
@@ -59,14 +59,14 @@ export default function Property(){
     const moveLeft = (e) => {
         e.preventDefault();
         if (carouselRef.current) {
-            const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * ((scrolling - 1) / houseInfo.length));
+            const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * ((scrolling - 1) / houseInfoFiltered.length));
             scroll(carouselRef.current, scrollLeft);
         }
     }
 
     const handleScroll = () => {
         if (carouselRef.current) {
-            const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * houseInfo.length);
+            const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * houseInfoFiltered.length);
     
             setScrolling(index);
         }
