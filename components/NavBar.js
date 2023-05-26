@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
+import styles from '../styles/NavBar.module.css'
 import Image from 'next/image';
 
-export default function Reviews(){
+export default function NavBar(){
     const [signedIn, setSignedIn] = useState(false);
     const [isClassActive, setIsClassActive] = useState(false);
 
@@ -17,7 +18,7 @@ export default function Reviews(){
     }
 
     return(
-        <div className='navBar'>
+        <div className={styles.navBar}>
             <div className='logo'>
                 <div className='logoPaint'>
                     <div className='logoPaintOrange'></div>
@@ -25,21 +26,21 @@ export default function Reviews(){
                 </div>
                 <p className='logoText'>Hounter</p>
             </div>
-            <ul className='nav'>
-                <div className='navs'>
+            <ul className={styles.nav}>
+                <div className={styles.navs}>
                     <Link  href='/about'><li>About</li></Link>
                     <Link  href='/article'><li>Article</li></Link>
-                    <button className={isClassActive ? 'active' : ''} onClick={toggleClass}><li>Property <span>&#8250;</span> </li></button>
-                    <div className={`${isClassActive ? "menu active" : "menu"}`}>
-                        <ul className='propertyMenu'>
+                    <button className={isClassActive ? styles.active : ''} onClick={toggleClass}><li>Property <span>&#8250;</span> </li></button>
+                    <div className={`${isClassActive ? `${styles.menu} ${styles.active}` : styles.menu}`}>
+                        <ul className={styles.propertyMenu}>
                             <Link  href='/house'><li>House</li></Link>
                             <Link  href='/villa'><li>Villa</li></Link>
                             <Link  href='/apartment'><li >Apartment</li></Link>
                         </ul>
                     </div>
                 </div>
-                {!signedIn && <Link href='/signUp' className='signUp' onClick={(e)=>handleSign(e)}><li>Sign Up!</li></Link>}
-                {signedIn && <Link href='/signOut' className='signOut' onClick={(e)=>handleSign(e)}><li>Sign Out!</li></Link>}
+                {!signedIn && <Link href='/signUp' className={styles.signUp} onClick={(e)=>handleSign(e)}><li>Sign Up!</li></Link>}
+                {signedIn && <Link href='/signOut' className={styles.signOut} onClick={(e)=>handleSign(e)}><li>Sign Out!</li></Link>}
             </ul>
         </div>
     )
