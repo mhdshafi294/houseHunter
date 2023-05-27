@@ -10,8 +10,11 @@ body {
     margin: 0px;
 }
 
-.main{
-
+main{
+    background-image: url("../public/imgs/Vectorgl.png"), url("../public/imgs/Vectorb.png"), url("../public/imgs/Vectorgl.png"), url("../public/imgs/Vectorg.png"), url("../public/imgs/Vectory.png"), url("../public/imgs/Vectorr.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 438px 494px, 438px 494px, 438px 494px, 438px 494px, 438px 494px, 438px 494px;
+    background-position: bottom -116px right 46px, bottom -51px right -150px, top 3187px left -142px, top 2930px left -170px, top 1574px right -153px, top 1452px right -94px;
 }
 
 /*Global start*/
@@ -101,5 +104,21 @@ li{
     color: #1B1C57;
     align-self: center;
     margin-left: 12px;
+}
+
+.bg{
+    width: 438px;
+    height: 494px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 438px 494px;
+}
+
+.lightGreen{
+    background-image: url("../public/imgs/Vectorgl.png");
+}
+
+.blue{
+    background-image: url("../public/imgs/Vectorb.png");
 }
 /*Global end*/

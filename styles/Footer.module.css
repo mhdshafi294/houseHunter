@@ -1,9 +1,11 @@
 .footer{
-    margin: 120px auto;
+    margin: 120px auto 0px;
+    padding-bottom: 120px;
     width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
 }
 
 .footer .hounter{
