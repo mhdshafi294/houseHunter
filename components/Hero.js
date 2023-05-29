@@ -18,7 +18,7 @@ export default function Hero(){
             <div className={styles.left}>
                 <div className={styles.content}>
                     <h2 className={styles.title}>
-                        find the place <br/> to live <span>your dreams</span> <br/> easily here
+                        find the place to <br/> live <span>your dreams</span> <br/> easily here
                     </h2>
                     <p className={styles.description}>
                         Everything you need about finding your place to live will be here, where it will be easier for you
