@@ -14,7 +14,7 @@ export default function Reviews(){
     const handleClick = (e, i) => {
         e.preventDefault();
         if (carouselRef.current) {
-            const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / reviews.length));
+            const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.4 * (i / reviews.length));
             scroll(carouselRef.current, scrollLeft);
         }
     }
@@ -31,7 +31,7 @@ export default function Reviews(){
     useEffect(() => {
         const handleResize = () => {
             if (carouselRef.current) {
-                scroll(carouselRef.current, carouselRef.current.scrollWidth * 0.21);
+                scroll(carouselRef.current, carouselRef.current.scrollWidth * 0.15);
             }
         }
         handleResize();
