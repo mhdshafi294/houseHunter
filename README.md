@@ -1,3 +1,5 @@
+An implementation of the UI of the house-hunter website which is nice looking with good UX Real estate trade website. This one-page app is long with so many sections, please enjoy exploring it.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
