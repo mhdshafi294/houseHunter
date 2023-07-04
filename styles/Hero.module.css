@@ -123,6 +123,8 @@
     border-radius: 0px 0px 0px 80px;
     position: relative;
     overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero .right .statsScroll{
@@ -154,8 +156,8 @@
 
 .hero .right .redCorner{
     position: relative;
-    top: 141px;
-    left: 116px;
+    top: 156px;
+    left: 131px;
     width: 66.5px;
     height: 91.5px;
     border-left: 4px solid #EF4444;
@@ -165,8 +167,8 @@
 
 .hero .right .blueCorner{
     position: absolute;
-    top: 409px;
-    right: 90px;
+    top: 400px;
+    left: 587px;
     width: 42.5px;
     height: 75px;
     border-right: 4px solid #3B82F6;
@@ -176,8 +178,8 @@
 
 .hero .right .yellowCorner{
     position: absolute;
-    top: 209.5px;
-    right: 99px;
+    top: 211px;
+    left: 571px;
     width: 39.5px;
     height: 97px;
     border-right: 4px solid #F59E0B;
