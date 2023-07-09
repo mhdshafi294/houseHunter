@@ -2,28 +2,28 @@ export const reviews = [
   {
     title: 'My house sold out fast!',
     description: "I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!",
-    image: '/../public/imgs/rectangle20.png',
+    image: '/imgs/rectangle20.png',
     userName: 'Courtney Henry',
     userJob: 'CEO Andarafish',
-    userImage: '/../public/imgs/ellipse5.png',
+    userImage: '/imgs/ellipse5.png',
     rate: 4.3,
   },
   {
     title: 'Best! I got the house I wanted through Hounter',
     description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: '/../public/imgs/rectangle21.png',
+    image: '/imgs/rectangle21.png',
     userName: 'Dianne Russell',
     userJob: 'Manager Director',
-    userImage: '/../public/imgs/ellipse6.png',
+    userImage: '/imgs/ellipse6.png',
     rate: 4.6,
   },
   {
     title: 'Through the Hounter, I can get a house for my self',
     description: "By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!",
-    image: '/../public/imgs/rectangle22.png',
+    image: '/imgs/rectangle22.png',
     userName: 'Esther Howard',
     userJob: 'Head of Marketing',
-    userImage: '/../public/imgs/ellipse7.png',
+    userImage: '/imgs/ellipse7.png',
     rate: 4.6,
   }
 ];
@@ -32,17 +32,17 @@ export const stats = [
   {
     title: '1K+ People',
     sentence: "Successfully Getting Home",
-    images: ['/../public/imgs/stats/Ellipse4.png', '/../public/imgs/stats/Ellipse5.png', '/../public/imgs/stats/Ellipse6.png']
+    images: ['/imgs/stats/Ellipse4.png', '/imgs/stats/Ellipse5.png', '/imgs/stats/Ellipse6.png']
   },
   {
     title: '56 Houses',
     sentence: "Sold Monthly",
-    images: ['/../public/imgs/stats/Rectangle12.png']
+    images: ['/imgs/stats/Rectangle12.png']
   },
   {
     title: '4K+',
     sentence: "People Looking for New Homes",
-    images: ['/../public/imgs/stats/Ellipse6_1.png'],
+    images: ['/imgs/stats/Ellipse6_1.png'],
   }
 ];
 
@@ -50,40 +50,40 @@ export const houseInfo = [
   {
     name: 'Roselands House',
     price: "35.000.000",
-    image: '/../public/imgs/rectangle15.jpg',
+    image: '/imgs/rectangle15.jpg',
     badge: 'Popular',
     ownerName: 'Dianne Russell',
-    ownerImage: '/../public/imgs/ellipse6.png',
+    ownerImage: '/imgs/ellipse6.png',
     location: 'Manchester, Kentucky',
     type: 'House'
   },
   {
     name: 'Woodlandside',
     price: "20.000.000",
-    image: '/../public/imgs/rectangle15_1.jpg',
+    image: '/imgs/rectangle15_1.jpg',
     badge: 'New House',
     ownerName: 'Robert Fox',
-    ownerImage: '/../public/imgs/ellipse8.jpg',
+    ownerImage: '/imgs/ellipse8.jpg',
     location: 'Dr. San Jose, South Dakota',
     type: 'House'
   },
   {
     name: 'The Old Lighthouse',
     price: "44.000.000",
-    image: '/../public/imgs/rectangle15_2.jpg',
+    image: '/imgs/rectangle15_2.jpg',
     badge: 'Best Deals',
     ownerName: 'Ronald Richards',
-    ownerImage: '/../public/imgs/ellipse9.jpg',
+    ownerImage: '/imgs/ellipse9.jpg',
     location: 'Santa Ana, Illinois',
     type: 'Apartment'
   },
   {
     name: "Cosmo's House",
     price: "22.000.000",
-    image: '/../public/imgs/rectangle15_3.jpg',
+    image: '/imgs/rectangle15_3.jpg',
     badge: 'Popular',
     ownerName: 'Jenny Wilson',
-    ownerImage: '/../public/imgs/ellipse10.jpg',
+    ownerImage: '/imgs/ellipse10.jpg',
     location: 'Preston Rd. Inglewood, Maine 98380',
     type: 'Villa'
   },
@@ -116,36 +116,36 @@ export const houseDetail = [
 export const tipsInfo = [
   {
     authorName: 'Dianne Russell',
-    authorImage: '/../public/imgs/ellipse6.png',
+    authorImage: '/imgs/ellipse6.png',
     title: 'The things we need to check when we want to buy a house',
-    image: '/../public/imgs/Rectangle22_0.png',
+    image: '/imgs/Rectangle22_0.png',
     publishDate: "25 Apr 2021",
     readDuration: 4,
     shortDescription:"Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
   },
   {
     authorName: 'Courtney Henryl',
-    authorImage: '/../public/imgs/ellipse6_1.png',
+    authorImage: '/imgs/ellipse6_1.png',
     title: '7 Ways to distinguish the quality of the house we want to buy',
-    image: '/../public/imgs/Rectangle22_1.png',
+    image: '/imgs/Rectangle22_1.png',
     publishDate: "24 Apr 2021",
     readDuration: 6,
     shortDescription:"Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
   },
   {
     authorName: 'Darlene Robertson',
-    authorImage: '/../public/imgs/ellipse6_2.png',
+    authorImage: '/imgs/ellipse6_2.png',
     title: 'The best way to know the quality of the house we want to buy',
-    image: '/../public/imgs/Rectangle22_2.png',
+    image: '/imgs/Rectangle22_2.png',
     publishDate: "24 Apr 2021",
     readDuration: 2,
     shortDescription:"Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
   },
   {
     authorName: 'Cameron Williamson',
-    authorImage: '/../public/imgs/ellipse6_3.png',
+    authorImage: '/imgs/ellipse6_3.png',
     title: '12 Things to know before buying a house',
-    image: '/../public/imgs/Rectangle23.png',
+    image: '/imgs/Rectangle23.png',
     publishDate: "25 Apr 2021",
     readDuration: 8,
     shortDescription:"Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
