@@ -37,9 +37,9 @@ export default function Hero(){
                         Our Partnership 
                     </p>
                     <div className={styles.partners}>
-                        <Image src='/imgs/traveloka_logo 2.png' width='83' height='18'/>
-                        <Image src='/imgs/tiket_logo 5.png' width='83' height='23'/>
-                        <Image src='/imgs/airbnb_logo 3.png' width='83' height='26'/>
+                        <Image src='/imgs/traveloka_logo2.png' width='83' height='18'/>
+                        <Image src='/imgs/tiket_logo5.png' width='83' height='23'/>
+                        <Image src='/imgs/airbnb_logo3.png' width='83' height='26'/>
                         <Image src='/imgs/tripadvisor_logo.png' width='83' height='15'/>
                     </div>
                 </div>
