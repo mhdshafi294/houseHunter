@@ -96,8 +96,8 @@ export default function Properties(){
                     {navs}
                 </div>
                 <div className={styles.buttons}>
-                    <button className={styles.arrowLeft} onClick={(e) => moveLeft(e)}><Image src="/../public/imgs/s2/eva_arrow-backward.png" width="28" height="28"/></button>
-                    <button className={styles.arrowRight} onClick={(e) => moveRight(e)}><Image src="/../public/imgs/s2/eva_arrow-forward.png" width="28" height="28"/></button>
+                    <button className={styles.arrowLeft} onClick={(e) => moveLeft(e)}><Image src="/imgs/s2/eva_arrow-backward.png" width="28" height="28"/></button>
+                    <button className={styles.arrowRight} onClick={(e) => moveRight(e)}><Image src="/imgs/s2/eva_arrow-forward.png" width="28" height="28"/></button>
                 </div>
             </div>
             <div className={styles.scrollContainer} ref={carouselRef} onScroll={handleScroll}>

@@ -54,7 +54,7 @@ export default function Tour(){
                     </div>
                     <div className={styles.greyDivider}></div>
                     <div className={styles.contact}>
-                        <Image src='/../public/imgs/ellipse6.png' className={styles.contactPic} width='56' height='56'/>
+                        <Image src='/imgs/ellipse6.png' className={styles.contactPic} width='56' height='56'/>
                         <div className={styles.contactText}>
                             <p className={styles.name}>Dianne Russell</p>
                             <p className={styles.job}>Manager Director</p>
@@ -65,9 +65,9 @@ export default function Tour(){
             </div>
             <div className={styles.media}>
                 <div className={styles.imgs}>
-                    <Image src='/../public/imgs/Rectangle18.jpg' className={styles.contactPic} width='296' height='168'/>
-                    <Image src='/../public/imgs/Rectangle19.jpg' className={styles.contactPic} width='96' height='80'/>
-                    <Image src='/../public/imgs/Rectangle20.jpg' className={styles.contactPic} width='96' height='80'/>
+                    <Image src='/imgs/Rectangle18.jpg' className={styles.contactPic} width='296' height='168'/>
+                    <Image src='/imgs/Rectangle19.jpg' className={styles.contactPic} width='96' height='80'/>
+                    <Image src='/imgs/Rectangle20.jpg' className={styles.contactPic} width='96' height='80'/>
                 </div>
                 <div className={styles.video} >
                     <YouTube 
@@ -82,7 +82,7 @@ export default function Tour(){
                         onReady={(event) => { event.target.pauseVideo(); }}
                         // onPlay={handleOnPlay}
                     />
-                    {/* <Image src='/../public/imgs/Rectangle17.jpg' className={styles.contactPic} width='488' height='416'/>
+                    {/* <Image src='/imgs/Rectangle17.jpg' className={styles.contactPic} width='488' height='416'/>
                     <button className={styles.videoButton}><BsPlayFill /></button> */}
                 </div>
             </div>

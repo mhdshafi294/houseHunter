@@ -18,7 +18,7 @@ export default function ReviewCard(props){
                         </div>
                     </div>
                     <div className={styles.reviewRate}>
-                        <Image src={'/../public/imgs/vector.png'} className={styles.reviewStar} width='23' height='23'/>
+                        <Image src={'/imgs/vector.png'} className={styles.reviewStar} width='23' height='23'/>
                         <p className={styles.reviewRateText}>{props.rate}</p>
                     </div>
                 </div>

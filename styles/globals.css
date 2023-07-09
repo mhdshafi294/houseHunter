@@ -11,7 +11,7 @@ body {
 }
 
 main{
-    background-image: url("../public/imgs/Vectorgl.png"), url("../public/imgs/Vectorb.png"), url("../public/imgs/Vectorgl.png"), url("../public/imgs/Vectorg.png"), url("../public/imgs/Vectory.png"), url("../public/imgs/Vectorr.png");
+    background-image: url("/imgs/Vectorgl.png"), url("/imgs/Vectorb.png"), url("/imgs/Vectorgl.png"), url("/imgs/Vectorg.png"), url("/imgs/Vectory.png"), url("/imgs/Vectorr.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 438px 494px, 438px 494px, 438px 494px, 438px 494px, 438px 494px, 438px 494px;
     background-position: bottom -116px right 46px, bottom -51px right -150px, top 3187px left -142px, top 2930px left -170px, top 1574px right -153px, top 1452px right -94px;
@@ -115,10 +115,10 @@ li{
 }
 
 .lightGreen{
-    background-image: url("../public/imgs/Vectorgl.png");
+    background-image: url("/imgs/Vectorgl.png");
 }
 
 .blue{
-    background-image: url("../public/imgs/Vectorb.png");
+    background-image: url("/imgs/Vectorb.png");
 }
 /*Global end*/

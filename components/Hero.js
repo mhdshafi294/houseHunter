@@ -24,7 +24,7 @@ export default function Hero(){
                         Everything you need about finding your place to live will be here, where it will be easier for you
                     </p>
                     <div className={styles.searchBar}>
-                        <Image className={styles.fluent} src="/../public/imgs/fluent_location-16-filled.png" width="24" height="24"/>
+                        <Image className={styles.fluent} src="/imgs/fluent_location-16-filled.png" width="24" height="24"/>
                         <input
                             type="text"
                             placeholder="Search for the location you want!"
@@ -37,10 +37,10 @@ export default function Hero(){
                         Our Partnership 
                     </p>
                     <div className={styles.partners}>
-                        <Image src='/../public/imgs/traveloka_logo 2.png' width='83' height='18'/>
-                        <Image src='/../public/imgs/tiket_logo 5.png' width='83' height='23'/>
-                        <Image src='/../public/imgs/airbnb_logo 3.png' width='83' height='26'/>
-                        <Image src='/../public/imgs/tripadvisor_logo.png' width='83' height='15'/>
+                        <Image src='/imgs/traveloka_logo 2.png' width='83' height='18'/>
+                        <Image src='/imgs/tiket_logo 5.png' width='83' height='23'/>
+                        <Image src='/imgs/airbnb_logo 3.png' width='83' height='26'/>
+                        <Image src='/imgs/tripadvisor_logo.png' width='83' height='15'/>
                     </div>
                 </div>
             </div>

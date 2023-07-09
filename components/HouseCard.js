@@ -9,15 +9,15 @@ export default function HouseCard({house}){
     if(house.badge === 'Popular'){
         badgeBackGround = '#FEE2E2';
         badgeColor = '#EF4444';
-        badgeImage = '/../public/imgs/ant-design_fire-filled.png';
+        badgeImage = '/imgs/ant-design_fire-filled.png';
     } else if(house.badge === 'New House'){
         badgeBackGround = '#DBEAFE';
         badgeColor = '#1D4ED8';
-        badgeImage = '/../public/imgs/ph_house-fill-blue.png';
+        badgeImage = '/imgs/ph_house-fill-blue.png';
     } else if(house.badge === 'Best Deals'){
         badgeBackGround = '#D1FAE5';
         badgeColor = '#047857';
-        badgeImage = '/../public/imgs/entypo_wallet.png';
+        badgeImage = '/imgs/entypo_wallet.png';
     }
     
     const badgeStyles = {

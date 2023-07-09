@@ -27,14 +27,14 @@ export default function Subscribe() {
                     <button className={styles.btn}>Subsribe Now</button>
                 </div>
             </div>
-            <Image className={styles.img1} src="/../public/imgs/Rect12.png" width="81" height="81" />
-            <Image className={styles.img2} src="/../public/imgs/ellipse6.png" width="36" height="36" />
-            <Image className={styles.img3} src="/../public/imgs/ellipse9.jpg" width="36" height="36" />
-            <Image className={styles.img4} src="/../public/imgs/Rect25.png" width="54" height="54" />
-            <Image className={styles.img5} src="/../public/imgs/Rect26.png" width="70" height="70" />
-            <Image className={styles.img6} src="/../public/imgs/ellipse6_1.png" width="36" height="36" />
-            <Image className={styles.img7} src="/../public/imgs/ellipse9_1.png" width="36" height="36" />
-            <Image className={styles.img8} src="/../public/imgs/Rect27.png" width="55" height="55" />
+            <Image className={styles.img1} src="/imgs/Rect12.png" width="81" height="81" />
+            <Image className={styles.img2} src="/imgs/ellipse6.png" width="36" height="36" />
+            <Image className={styles.img3} src="/imgs/ellipse9.jpg" width="36" height="36" />
+            <Image className={styles.img4} src="/imgs/Rect25.png" width="54" height="54" />
+            <Image className={styles.img5} src="/imgs/Rect26.png" width="70" height="70" />
+            <Image className={styles.img6} src="/imgs/ellipse6_1.png" width="36" height="36" />
+            <Image className={styles.img7} src="/imgs/ellipse9_1.png" width="36" height="36" />
+            <Image className={styles.img8} src="/imgs/Rect27.png" width="55" height="55" />
         </section>
     )
 }
